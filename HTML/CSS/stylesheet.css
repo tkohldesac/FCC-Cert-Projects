@@ -82,12 +82,7 @@
       height: 100vh;
   }
 
-  #projects ul{
-    display: flex;
-    
-    justify-content: center;
-    
-  }
+
 
   #projects li {
     list-style-type: none;
@@ -102,6 +97,10 @@
     flex:1;
   }
 
+  #project li:hover {
+    background-color: #999;
+  }
+
   #projects a {
     text-decoration: none;
     color: black;
@@ -111,29 +110,6 @@
     display: flex;
     width: 100%;
     background-color: brown;
-  }
-
-  .project-wrapper .row {
-    flex:1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-
-  .project-wrapper .row2 {
-    /* flex:1; */
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-
-  }
-
-  .project-wrapper .column {
-    
-    flex-direction: column;
-    flex-basis: 100%;
-    flex:1;
-    margin: auto;
   }
 
   #certs {
