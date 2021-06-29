@@ -4,30 +4,42 @@ const decreaseButton = document.getElementById("btn-decrease")
 const resetButton = document.getElementById("btn-reset")
 const increaseButton = document.getElementById("btn-increase")
 
-var currentValue = document.getElementById("value").innerText;
-
+var currentValue = document.getElementById("value");
 
 
 console.log
 decreaseButton.addEventListener('click', function () {
     // decreaseNum();
     console.log("Decrease Button")
-    num = Number(document.getElementById("value").innerText)
+    num = Number(currentValue.innerText)
     num -= 1
-    document.getElementById("value").innerText = num
+    currentValue.innerText = num
+    changeColor(num);
 })
 
 resetButton.addEventListener('click', function () {
     console.log("Reset Button")
-    document.getElementById("value").innerText = 0
-    
+    currentValue.innerText = 0
+    changeColor("0");
 })
 
 increaseButton.addEventListener('click', function () {
     console.log("Increase Button")
-    num = Number(document.getElementById("value").innerText)
+    num = Number(currentValue.innerText)
     num += 1
-    document.getElementById("value").innerText = num
+    currentValue.innerText = num
+    changeColor(num);
 })
 
-
+function changeColor(num) {
+    if (num < 0) {
+        currentValue.style.color = "red"
+        console.log("less than 0");
+    } else if (num > 0) {
+        currentValue.style.color = "green"
+        console.log("more than 0");
+    } else {
+        currentValue.style.color = "black"
+        console.log("equal to 0");
+    }
+}
