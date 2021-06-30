@@ -1,67 +1,78 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link href="HTML/CSS/tophStylesheet.css" rel="stylesheet" type="text/css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topher - Web Developer</title>
+    <link href="HTML/CSS/tophStylesheet.css" rel="stylesheet">
 </head>
-<body>
-    <nav id="navbar">
-      <ol>
-        <li>
-          <a href="#welcome-section">Welcome</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#certs">Certifications</a>
-        </li>
-        <li>
-          <a href="#footer">Contact</a>
-        </li>
-      </ol>
-    </nav>
-    <main>
-      <section id="welcome-section">
-        <div id="welcome-text" data-hover="topher@kohldesac.com">
-          <h1>
-            Hello, I'm Topher
-          </h1>
-          <h2> 
-            A Web Developer
-          </h2>
+<!-- Dropdown -->
+<nav>
+    <div id="nav-wrapper">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+
+
+            <!-- FCC Projects -->
+            <div class="dropdown">
+                <button class="dropbtn">FreeCodeCamp
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="HTML/goshzilla.html">Tribute Page</a>
+                    <a href="HTML/productPage.html">Product Page</a>
+                    <a href="HTML/scumbagForm.html">Form</a>
+                    <a href="HTML/techDoc.html">Technical Document</a>
+                </div>
+
+            </div>
+            <!-- Side Projects Dropdown -->
+            <div class="dropdown">
+
+                <button class="dropbtn">Side Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Projects/ColorFlipper-master/colorFlipper.html">Color Flippers</a>
+                    <a href="Projects/Calculator-completed--needs-style-master/calculator.html">Calculator</a>
+                    <a href="Projects/counter-master/index.html">Counter</a>
+                    <a href="Projects/reviewsProject-master/index.html">Reviews</a>
+                </div>
+
+            </div>
+            <!-- Unrelated Fun Projects -->
+            <!-- <div class="dropdown">
+
+                <button class="dropbtn hidden">Unrelated Fun
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="Projects/FFXIV-master/index.html">FFXIV API</a>
+
+                </div>
+
+            </div> -->
+            <a href="./HTML/resume.html">Resume</a>
+            <a <a href="mailto:topher@kohldesac.com?&subject=Great%20News!&body=I'd like to offer you a job!">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-      </section>
+    </div>
+</nav>
+<main>
+    <div id="intro">
+        <h2>Topher Kohlstedt</h2>
+        <h3>Web Developer</h3>
+        <p>This is the first ever site that I'm building 100% from the ground up applying what I have learned over several projects, several hundred hours of tutorials.</p>
+        <p>In 2013, I received my Associates of Applied Sciences with a focus in Web Development. In the time since, I've spent my time doing many things. I met and married my wife and have started a familiy, I've moved across the country, I've worked professionally
+            as an IT technician, I've discovered new passion for several hobbies including woodworking, drawing, writing and IoT.</p>
+        <p>Among these new passions, I've also discovered an old passion for web development. It seems that every free moment I get, I'm diving into Documentation, FreeCodeAcademy, Udemy and Stack Overflow trying to find new things to code.</p>
+        <p>Above, you'll find a list of Projects that I've been working on. I've struggled with adding a persistent navbar that will allow a user to visit every page from every page, but it's on my list of features I need to implement. The issue is mostly
+            that the pages were all built independently of each other and copying&pasting the code for the navbar on this site breaks the others. </p>
+    </div>
+</main>
+<script src="HTML/Scripts/main.js"></script>
+</body>
 
-      <div id="placeholder">
-        <h1> Placeholder Title</h1>
-        <p> I like the way the black and white looks in the certs section at the bottom so I'm putting this here temporarily until I can figure out what else to put here. I think it looks better than 2 gradients bumping against each other, personally. 
-        </p>
-      </div>
-      <section id="projects">
-
-        <h2>These are my latest projects:</h2>
-    
-          <ul>
-            <li><a href="HTML/goshzilla.html">Tribute Page</a></li>
-            <li><a href="HTML/productPage.html">Product Page</a></li>
-            <li><a href="HTML/techDoc.html">Technical Document</a></li>
-            <li><a href="HTML/scumbagForm.html">Form Example</a></li>
-          </ul>
-      </div>
-      </section>
-      
-      <section id="certs">
-        <h2>This is a list of my certifications from <a href="http://freecodecamp.org" target="_blank">freecodecamp.org</a>:</h2>
-        <ul>
-          
-          <li><a href="https://www.freecodecamp.org/certification/tkohl/responsive-web-design" target="_blank">Responsive Web Design</a></li>
-          <li><a href="">Javascript Algorithms and Data Structures (In Progress)</a></li>
-        </ul>
-      </section>
-
-    </main>
-    <footer id="footer">
-      <a href="https://github.com/tkohldesac/" id="profile-link" target="_blank">GitHub Profile</a>
-      <p>© Copyright 2021 by Topher Kohlstedt</p>
-    </footer>
-  </body>
+</html>

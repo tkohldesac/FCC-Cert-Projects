@@ -1,53 +1,68 @@
 body {
-    margin: 0;
-    font-family: monospace;
-    background-color: darkslategray;
-    font-size: 1.15em;
+    justify-content: center;
+    background-color: gray;
+    font-family: sans-serif;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 5%;
+    flex-direction: column;
     width: 50%;
-    padding-left: 25%;
-}
-
-.hidden {
-    display: none;
-}
-
-#nav-wrapper {
+    background-color: ivory;
+    padding: 5rem;
     margin: auto;
-    text-align: center;
-    margin-bottom: 2%;
 }
 
-#intro {
-    display: flex;
-    flex-direction: column;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    background-color: rgb(201, 201, 190);
-    padding-left: 20%;
-    padding-right: 20%;
-    margin: auto;
-    min-height: 73vmin;
-    flex-direction: column;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+h2 {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: lightgray;
 }
 
-#intro h2 {
-    font-size: 3rem;
+#work1,
+#work2,
+#work3,
+#edu1,
+#edu2,
+#skillsList,
+#assessment {
+    border: 5px ridge rgba(28, 110, 164, 0.12);
+    border-left-color: black;
+    border-bottom-color: black;
+    border-radius: 2px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+#ul1 {
+    column-count: 2;
+}
+
+#work2,
+#edu1,
+#assessment {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#name,
+#profession {
     text-align: center;
 }
 
-#intro h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: -2rem;
+#profession {
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+    color: darkslategray
+}
+
+#email,
+#authorization {
+    margin-top: 0px;
+    color: darkslategray;
+    text-align: right;
 }
 
 .topnav {
@@ -133,11 +148,15 @@ main {
     display: block;
 }
 
+#role {
+    margin-bottom: -10px;
+}
+
+#workDate {
+    margin-top: -10px;
+}
+
 @media screen and (max-width: 600px) {
-    main {
-        padding-left: 0px;
-        width: 100%;
-    }
     .hidden {
         display: none;
     }
@@ -152,9 +171,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-    main {
-        padding-left: 0px;
-    }
     .hidden {
         display: none;
     }
