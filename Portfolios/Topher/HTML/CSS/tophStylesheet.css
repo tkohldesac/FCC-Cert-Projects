@@ -97,7 +97,7 @@ main {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: monospace;
     margin: 0;
 }
 
