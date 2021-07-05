@@ -2,6 +2,7 @@ body {
     justify-content: center;
     background-color: gray;
     font-family: sans-serif;
+    margin: 0;
 }
 
 main {
@@ -17,6 +18,16 @@ h2 {
     border-style: solid;
     border-width: 0px 0px 2px 0px;
     border-color: lightgray;
+    color: darkslategray;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#workDate {
+    padding-left: 2%;
+    color: darkslategray;
 }
 
 #work1,
@@ -27,8 +38,8 @@ h2 {
 #skillsList,
 #assessment {
     border: 5px ridge rgba(28, 110, 164, 0.12);
-    border-left-color: black;
-    border-bottom-color: black;
+    border-left: none;
+    border-bottom: none;
     border-radius: 2px;
     padding-top: 1%;
     padding-right: 1%;
@@ -37,7 +48,7 @@ h2 {
 }
 
 #ul1 {
-    column-count: 2;
+    column-count: 3;
 }
 
 #work2,
@@ -112,7 +123,7 @@ h2 {
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit;
+    font-family: monospace;
     margin: 0;
 }
 
