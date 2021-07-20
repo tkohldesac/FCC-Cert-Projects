@@ -38,8 +38,8 @@ h2 {
 #skillsList,
 #assessment {
     border: 5px ridge rgba(28, 110, 164, 0.12);
-    border-left: none;
-    border-bottom: none;
+    border-right: none;
+    border-top: none;
     border-radius: 2px;
     padding-top: 1%;
     padding-right: 1%;
