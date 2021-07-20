@@ -6,64 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topher Kohlstedt Resume</title>
-    <link rel="stylesheet" href="/Portfolios/Topher/HTML/CSS/resume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <link rel="stylesheet" href="/CSS/resume.css">
 </head>
 
 <body>
     <!-- Dropdown -->
-    <nav>
-        <div id="nav-wrapper">
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="/images/kohldesacLogoPlaceholder.png" alt="Kohldesac.com logo" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
 
 
-                <!-- FCC Projects -->
-                <div class="dropdown">
-                    <button class="dropbtn">FreeCodeCamp
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                    <div class="dropdown-content">
-                        <a href="HTML/goshzilla.html">Tribute Page</a>
-                        <a href="HTML/scumbagForm.html">Form</a>
-                        <a href="HTML/techDoc.html">Technical Document</a>
-                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/HTML/resume.html">Resume</a></li>
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
 
-                </div>
-                <!-- Side Projects Dropdown -->
-                <div class="dropdown">
-
-                    <button class="dropbtn">Side Projects
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                    <div class="dropdown-content">
-                        <a href="Projects/ColorFlipper-master/colorFlipper.html">Color Flippers</a>
-                        <a href="Projects/Calculator-completed--needs-style-master/calculator.html">Calculator</a>
-                        <a href="Projects/counter-master/index.html">Counter</a>
-                        <a href="Projects/reviewsProject-master/index.html">Reviews</a>
-                    </div>
-
-                </div>
-                <!-- Unrelated Fun Projects -->
-                <!-- <div class="dropdown">
-
-                <button class="dropbtn hidden">Unrelated Fun
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="Projects/FFXIV-master/index.html">FFXIV API</a>
-
-                </div>
-
-            </div> -->
-                <a href="./HTML/resume.html">Resume</a>
-                <a <a href="mailto:topher@kohldesac.com?&subject=Great%20News!&body=I'd like to offer you a job!">Contact</a>
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
     </nav>
     <main>
+        <div class="nameContainer"></div>
         <h1 id="name">Topher Kohlstedt</h1>
         <h2 id="profession">Web Developer</h2>
+        </div>
         <h3 id="email">topher@kohldesac.com</h3>
         <p id="authorization">Authorized to work in the US for any employer</p>
 
@@ -71,13 +66,13 @@
             <h2>Links</h2>
             <h4>
                 <a href="https://www.linkedin.com/in/christopher-topher-k-10411371/ ">
-                    <img src="images/linkedin-square-logo-24.png" width="30px">
+                    <img src="/images/linkedin-square-logo-24.png" width="30px">
                 </a>
                 <a href="https://github.com/tkohldesac/">
-                    <img src="images/github-logo-24.png" width="30px"></img>
+                    <img src="/images/github-logo-24.png" width="30px"></img>
                 </a>
                 <a href="https://www.kohldesac.com">
-                    <img src="images/window-alt-solid-24.png" width="30px" < /h4>
+                    <img src="/images/window-alt-solid-24.png" width="30px" < /h4>
                 </a>
         </div>
 
@@ -165,11 +160,15 @@
                         <li>WordPress</li>
                         <li>Squarespace.com</li>
                         <li>Bootstrap</li>
+                        <li>React</li>
+                        <li>Rest API</li>
+
                     </ul>
                     <li>Office 365 Applications</li>
                     <li>VOIP</li>
                     <li>SQL and Microsoft Server 2008/2012</li>
-                    <li>VPN, Firewall and other network security technologies</li>
+                    <li>VPN</li>
+                    <li>Firewall Configuration</li>
                     <li>AD & Azure AD</li>
                     <li>Linux, Ubuntu 16.04 - 21.04</li>
                     <li>Help Desk</li>
@@ -191,8 +190,9 @@
         </div>
 
 
-
-        <h2>Indeed Assessments</h2>
+        <div id="assessmentTitle">
+            <h2>Indeed Assessments</h2>
+        </div>
         <div id="assessment">
             <h3>Technical Support — Highly Proficient</h3>
             <p>June 2020</p>
@@ -246,7 +246,7 @@
     <footer>
 
     </footer>
-    <script src="./Scripts/main.js "></script>
+
 </body>
 
 </html>

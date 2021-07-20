@@ -12,6 +12,7 @@ body {
     background-repeat: repeat;
     background-image: url("");
     background-repeat: repeat-y;
+    background-color: darkslategray;
 }
 
 .calculator-grid {

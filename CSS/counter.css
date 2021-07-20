@@ -62,13 +62,20 @@ Global Styles
 ===============
 */
 
-*,
 body {
     font-family: var(--ff-secondary);
     background: grey;
     color: var(--clr-grey-1);
     line-height: 1.5;
     font-size: 0.875rem;
+}
+
+.container {
+    background: white;
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-style: solid;
 }
 
 ul {

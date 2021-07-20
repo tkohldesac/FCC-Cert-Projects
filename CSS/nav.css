@@ -1,0 +1,11 @@
+.navbar {}
+
+.container-fluid img {
+    width: auto;
+    height: 65px;
+}
+
+.container-fluid {
+    font-size: 26px;
+    font-family: sans-serif;
+}

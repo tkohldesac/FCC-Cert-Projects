@@ -8,10 +8,35 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     background-color: ivory;
     padding: 5rem;
     margin: auto;
+    margin-top: 3rem;
+}
+
+h5 {
+    padding-top: 5px;
+}
+
+#profession {
+    padding-top: 10px;
+}
+
+#experience h2,
+#skills h2 {
+    padding-bottom: 5px;
+}
+
+#education h2,
+#assessmentTitle h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#experience h3,
+h4 {
+    padding-top: 1rem;
 }
 
 h2 {
@@ -19,6 +44,10 @@ h2 {
     border-width: 0px 0px 2px 0px;
     border-color: lightgray;
     color: darkslategray;
+}
+
+#links {
+    text-align: right;
 }
 
 #links a {
