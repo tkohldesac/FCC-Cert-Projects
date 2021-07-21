@@ -2,7 +2,14 @@
 
 .container-fluid img {
     width: auto;
-    height: 65px;
+    height: 70px;
+    border-style: solid;
+    padding: 5px;
+    border-color: gray;
+}
+
+.container-fluid img:hover {
+    border-color: black;
 }
 
 .container-fluid {

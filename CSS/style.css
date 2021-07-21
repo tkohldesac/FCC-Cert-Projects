@@ -33,14 +33,15 @@ body {
 }
 
 .profileDescription {
-    background-color: white;
     max-width: 100vw;
 }
 
 .profileDescription p {
     margin: auto;
     padding-left: 20%;
+    padding-right: 5%;
     text-align: right;
+    background-color: white;
 }
 
 .para2 {
