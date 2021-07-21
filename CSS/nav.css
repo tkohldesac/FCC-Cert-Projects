@@ -1,4 +1,10 @@
-.navbar {}
+.navbar {
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: darkgray;
+}
 
 .container-fluid img {
     width: auto;
