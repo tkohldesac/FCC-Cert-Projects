@@ -3,7 +3,31 @@ body {
     background: slategrey;
 }
 
-.profileWrapper {
+.profilePic {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+}
+
+.imageBorder {
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+    align-self: center;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 58);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-image: url(/images/headshot.png);
+    background-size: 90%;
+}
+
+
+/* .profileWrapper {
     position: relative;
     width: 95vw;
     max-height: 60vh;
@@ -14,7 +38,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: 'MuroRegular';
-}
+} */
 
 .nameWrapper {
     display: flex;
@@ -39,6 +63,7 @@ body {
     padding-left: 20%;
     padding-right: 5%;
     text-align: right;
+    width: 50%;
     background-color: white;
 }
 
