@@ -12,18 +12,20 @@ body {
 }
 
 .imageBorder {
-    width: 20vh;
-    height: 20vh;
+    width: 40vh;
+    height: 40vh;
     margin: auto;
     align-self: center;
     border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
     border-radius: 50%;
     background-color: rgb(61, 61, 58);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: local;
-    background-image: url(/images/headshot.png);
-    background-size: 80%;
+    background-image: url(/images/Bouchsloth.png);
+    background-size: 100%;
 }
 
 .name {
@@ -43,11 +45,41 @@ body {
         font-size: 2em;
         letter-spacing: 0.2rem;
     }
+    .imageBorder {
+        margin-left: -8vw;
+    }
 }
 
 @media screen and (max-width:449) {
     .name {
         font-size: .5rem;
         letter-spacing: 0.2rem;
+    }
+    .imageBorder {
+        margin-left: -15vw;
+    }
+}
+
+@media screen and (max-width:375) {
+    .name {
+        font-size: .5rem;
+        letter-spacing: 0.2rem;
+    }
+    .imageBorder {
+        display: none;
+        width: 10vh;
+        height: 10vh;
+        margin: auto;
+        border-style: hidden;
+        border-width: 5px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        background-color: rgb(61, 61, 58);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: local;
+        background-image: url(/images/Bouchsloth.png);
+        background-size: 100%;
+        background-size: 50%;
     }
 }
