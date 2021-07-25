@@ -48,6 +48,9 @@ body {
     .imageBorder {
         margin-left: -8vw;
     }
+    .descPara {
+        position: absolute;
+    }
 }
 
 @media screen and (max-width:449) {
@@ -57,6 +60,9 @@ body {
     }
     .imageBorder {
         margin-left: -15vw;
+    }
+    .descPara {
+        position: absolute;
     }
 }
 
@@ -69,8 +75,8 @@ body {
         display: none;
         width: 10vh;
         height: 10vh;
-        margin: auto;
-        border-style: hidden;
+        margin: -1vw;
+        border-style: solid;
         border-width: 5px;
         border-color: rgb(0, 0, 0);
         border-radius: 50%;
@@ -81,5 +87,8 @@ body {
         background-image: url(/images/Bouchsloth.png);
         background-size: 100%;
         background-size: 50%;
+    }
+    .descPara {
+        position: absolute;
     }
 }
