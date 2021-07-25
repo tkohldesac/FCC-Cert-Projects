@@ -12,7 +12,7 @@
         background-color: ivory;
         padding: 5rem;
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     
     h5 {
@@ -76,8 +76,8 @@
         padding-left: 2%;
     }
     
-    #ul1 {
-        column-count: 3;
+    #skillsList {
+        padding-left: 2rem;
     }
     
     #work2,
@@ -113,18 +113,8 @@
         margin-top: -10px;
     }
     
-    @media screen and (max-width: 675) {
-        #ul1 {
-            column-count: 2;
-        }
-    }
-    
-    @media screen and (max-width: 375) {
+    @media screen and (max-width: 768) {
         main {
-            padding-top: 0;
-            width: 90vw;
-        }
-        #ul1 {
-            column-count: 1;
+            margin-top: 0;
         }
     }
