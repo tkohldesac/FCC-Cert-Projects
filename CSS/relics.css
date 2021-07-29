@@ -1,42 +1,43 @@
-body {
-    background-color: rgb(37, 47, 194);
-}
-
-.sectionLabel {
-    text-align: center;
-    color: white;
-    margin-bottom: 0;
-}
-
-.jobs {
-    color: white;
-    width: 50vw;
-    margin: auto;
-    margin-top: 2vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    background-color: darkblue;
-    border-style: solid;
-    border-color: lightgray;
-    columns: 3;
-    font-weight: bolder;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.table {
-    width: 50vw;
-    margin: auto;
-    border-color: white;
-    border-style: solid;
-}
-
-.table td {
-    background-color: darkblue;
-}
-
-.table th {
-    background-color: darkblue;
-}
+        body {
+            background-color: rgb(37, 47, 194);
+        }
+        
+        .sectionLabel {
+            text-align: center;
+            color: white;
+            margin-bottom: 0;
+        }
+        
+        .jobs {
+            color: white;
+            width: 50vw;
+            margin: auto;
+            margin-top: 2vh;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            background-color: darkblue;
+            border-style: solid;
+            border-color: lightgray;
+            columns: 3;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .table {
+            width: 50vw;
+            margin: auto;
+            border-color: white;
+            border-style: solid;
+            margin-bottom: 5vh;
+        }
+        
+        .table td {
+            background-color: darkblue;
+        }
+        
+        .table th {
+            background-color: darkblue;
+        }
