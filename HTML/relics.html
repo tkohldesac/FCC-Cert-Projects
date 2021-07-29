@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../Scripts/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/relics.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <title>FFXIV Relics</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/images/kohldesacLogoPlaceholder.png" href="index.html" alt="Kohldesac.com logo" width="30" height="24" href="index.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/resume.html">Resume</a>
+                    </li>
+                    <!--Projects Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item disabled">No Javascript:</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/dyNxwwe">Technical Document</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/dyNxRqN">Form</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/vYgogRm">Tribute Page</a></li>
+                            <li>
+
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-item disabled">Some Javascript:</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/HTML/colorFlipper.html">Color Flippers</a></li>
+                            <li><a class="dropdown-item" href="/HTML/calculator.html">Calculator</a></li>
+                            <li><a class="dropdown-item" href="/HTML/counter.html">Counter</a></li>
+                            <li><a class="dropdown-item" href="/HTML/reviewsProject.html">Reviews</a></li>
+                        </ul>
+                    </li>
+                    <!--Under Construction Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Under Construction
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item disabled">Fun Stuff</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://tkohldesac.github.io/FFXIV/">FFXIV Character Lookup</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="../HTML/relics.html">FFXIV Relics Tracker</a></li>
+                            <hr class="dropdown-divider">
+                    </li>
+
+                    </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h1 class="sectionLabel">Jobs</h1>
+    <div class="jobs">
+        <div class="paladin">
+            <label for="resistancePld" class="form-label">PLD</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistancePld" value="0">
+        </div>
+        <div class="warrior">
+            <label for="resistanceWar" class="form-label">WAR</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceWar" value="0">
+        </div>
+        <div class="darkknight">
+            <label for="resistanceDrk" class="form-label">DRK</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDrk" value="0">
+        </div>
+        <div class="gunbreaker">
+            <label for="resistanceGnb" class="form-label">GNB</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceGnb" value="0">
+        </div>
+        <div class="whitemage">
+            <label for="resistanceWhm" class="form-label">WHM</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceWhm" value="0">
+        </div>
+        <div class="scholar">
+            <label for="resistanceSch" class="form-label">SCH</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSch" value="0">
+        </div>
+        <div class="astrologian">
+            <label for="resistanceAst" class="form-label">AST</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceAst" value="0">
+        </div>
+        <div class="monk">
+            <label for="resistanceMnk" class="form-label">MNK</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceMnk" value="0">
+        </div>
+        <div class="dragoon">
+            <label for="resistanceDrg" class="form-label">DRG</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDrg" value="0">
+        </div>
+
+        <div class="ninja">
+            <label for="resistanceNin" class="form-label">NIN</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceNin" value="0">
+        </div>
+        <div class="samurai">
+            <label for="resistanceSam" class="form-label">SAM</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSam" value="0">
+        </div>
+        <div class="bard">
+            <label for="resistanceBrd" class="form-label">BRD</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceBrd" value="0">
+        </div>
+        <div class="machinist">
+            <label for="resistanceMch" class="form-label">MCH</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceMch" value="0">
+        </div>
+        <div class="dancer">
+            <label for="resistanceDnc" class="form-label">DNC</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDnc" value="0">
+        </div>
+        <div class="blackmage">
+            <label for="resistanceBlm" class="form-label">BLM</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceBlm" value="0">
+        </div>
+        <div class="summoner">
+            <label for="resistanceSmn" class="form-label">SMN</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSmn" value="0">
+        </div>
+        <div class="redmage">
+            <label for="resistanceRdm" class="form-label">RDM</label>
+            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceRdm" value="0">
+        </div>
+    </div>
+
+    <h1 class="sectionLabel" style="padding-top:2vh; padding-bottom:2vh; ">Items</h1>
+    <table class="table table-dark table-hover ">
+        <thead>
+            <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Quantity Per Weapon</th>
+                <th scope="col">Total Quantity</th>
+                <th scope="col">Current Quantity Needed</th>
+                <th scope="col">Phase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Thavnarian Scale Powder</th>
+                <td>4</td>
+                <td>64</td>
+                <td>64</td>
+                <td>Resistance</td>
+            </tr>
+            <tr>
+                <th scope="row">Tortured Memories of the Dying</th>
+                <td>20</td>
+                <td>340</td>
+                <td>340</td>
+                <td>Augmented Resistance</td>
+            </tr>
+            <tr>
+                <th scope="row">Harrowing Memories of the Dying</th>
+                <td>20</td>
+                <td>340</td>
+                <td>340</td>
+                <td>Augmented Resistance</td>
+            </tr>
+            <tr>
+                <th scope="row">Sorrowful Memories of the Dying</th>
+                <td>20</td>
+                <td>340</td>
+                <td>340</td>
+                <td>Augmented Resistance</td>
+            </tr>
+            <tr>
+                <th scope="row">Bitter Memories of the Dying</th>
+                <td>6</td>
+                <td>102</td>
+                <td>102</td>
+                <td>Recollection</td>
+            </tr>
+            <tr>
+                <th scope="row">Loathsome Memories of the Dying</th>
+                <td>15</td>
+                <td>255</td>
+                <td>255</td>
+                <td>Law's Order</td>
+            </tr>
+            <tr>
+                <th scope="row">Timeworn Artifacts</th>
+                <td>15</td>
+                <td>255</td>
+                <td>255</td>
+                <td>Augmented Law's Order</td>
+            </tr>
+            <tr>
+                <th scope="row">Raw Emotions</th>
+                <td>15</td>
+                <td>255</td>
+                <td>255</td>
+                <td>Blade's</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../Scripts/relics.js"></script>
+</body>
+
+</html>
