@@ -62,3 +62,11 @@
             background-color: darkred;
             color: white;
         }
+        
+        @media screen and (max-width: 600px) {
+            .jobs {
+                columns: 1;
+                width: 100vw;
+                height: 100vh;
+            }
+        }
