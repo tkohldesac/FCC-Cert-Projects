@@ -82,75 +82,167 @@
     </nav>
     <h1 class="sectionLabel">Jobs</h1>
     <div class="jobs">
-        <div class="paladin">
-            <label for="resistancePld" class="form-label">PLD</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistancePld" value="0">
+        <div class="paladin btn-group jobGroup" role="group" aria-label="PLD">
+            <p class="text-center align-middle">PLD</p>
+            <button class="form-button toggled" id="pld0" value="0">0</button>
+            <button class="form-button" id="pld1" value="1" onclick="btnColor('pld1','darkred')">1</button>
+            <button class="form-button" id="pld2" value="2" onclick="btnColor('pld2','darkred')">2</button>
+            <button class="form-button" id="pld3" value="3" onclick="btnColor('pld3','darkred')">3</button>
+            <button class="form-button" id="pld4" value="4" onclick="btnColor('pld4','darkred')">4</button>
+            <button class="form-button" id="pld5" value="5" onclick="btnColor('pld5','darkred')">5</button>
+            <button class="form-button" id="pld6" value="6" onclick="btnColor('pld6','darkred')">6</button>
         </div>
-        <div class="warrior">
-            <label for="resistanceWar" class="form-label">WAR</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceWar" value="0">
+        <div class="warrior btn-group jobGroup" role="group" aria-label="WAR">
+            <p class="text-center align-middle">WAR</p>
+            <button class="form-button toggled" id="war0" value="0">0</button>
+            <button class="form-button" id="war1" value="1" onclick="btnColor('war1','darkred')">1</button>
+            <button class="form-button" id="war2" value="2" onclick="btnColor('war2','darkred')">2</button>
+            <button class="form-button" id="war3" value="3" onclick="btnColor('war3','darkred')">3</button>
+            <button class="form-button" id="war4" value="4" onclick="btnColor('war4','darkred')">4</button>
+            <button class="form-button" id="war5" value="5" onclick="btnColor('war5','darkred')">5</button>
+            <button class="form-button" id="war6" value="6" onclick="btnColor('war6','darkred')">6</button>
         </div>
-        <div class="darkknight">
-            <label for="resistanceDrk" class="form-label">DRK</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDrk" value="0">
+        <div class="darkknight btn-group jobGroup" role="group" aria-label="DRK">
+            <p class="text-center align-middle">DRK</p>
+            <button class="form-button toggled" id="drk0" value="0">0</button>
+            <button class="form-button" id="drk1" value="1" onclick="btnColor('drk1','darkred')">1</button>
+            <button class="form-button" id="drk2" value="2" onclick="btnColor('drk2','darkred')">2</button>
+            <button class="form-button" id="drk3" value="3" onclick="btnColor('drk3','darkred')">3</button>
+            <button class="form-button" id="drk4" value="4" onclick="btnColor('drk4','darkred')">4</button>
+            <button class="form-button" id="drk5" value="5" onclick="btnColor('drk5','darkred')">5</button>
+            <button class="form-button" id="drk6" value="6" onclick="btnColor('drk6','darkred')">6</button>
         </div>
-        <div class="gunbreaker">
-            <label for="resistanceGnb" class="form-label">GNB</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceGnb" value="0">
+        <div class="gunbreaker btn-group jobGroup" role="group" aria-label="gnb">
+            <p class="text-center align-middle">GNB</p>
+            <button class="form-button toggled" id="gnb0" value="0">0</button>
+            <button class="form-button" id="gnb1" value="1" onclick="btnColor('gnb1','darkred')">1</button>
+            <button class="form-button" id="gnb2" value="2" onclick="btnColor('gnb2','darkred')">2</button>
+            <button class="form-button" id="gnb3" value="3" onclick="btnColor('gnb3','darkred')">3</button>
+            <button class="form-button" id="gnb4" value="4" onclick="btnColor('gnb4','darkred')">4</button>
+            <button class="form-button" id="gnb5" value="5" onclick="btnColor('gnb5','darkred')">5</button>
+            <button class="form-button" id="gnb6" value="6" onclick="btnColor('gnb6','darkred')">6</button>
         </div>
-        <div class="whitemage">
-            <label for="resistanceWhm" class="form-label">WHM</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceWhm" value="0">
+        <div class="whitemage btn-group jobGroup" role="group" aria-label="whm">
+            <p class="text-center align-middle">WHM</p>
+            <button class="form-button toggled" id="whm0" value="0">0</button>
+            <button class="form-button" id="whm1" value="1" onclick="btnColor('whm1','darkred')">1</button>
+            <button class="form-button" id="whm2" value="2" onclick="btnColor('whm2','darkred')">2</button>
+            <button class="form-button" id="whm3" value="3" onclick="btnColor('whm3','darkred')">3</button>
+            <button class="form-button" id="whm4" value="4" onclick="btnColor('whm4','darkred')">4</button>
+            <button class="form-button" id="whm5" value="5" onclick="btnColor('whm5','darkred')">5</button>
+            <button class="form-button" id="whm6" value="6" onclick="btnColor('whm6','darkred')">6</button>
         </div>
-        <div class="scholar">
-            <label for="resistanceSch" class="form-label">SCH</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSch" value="0">
+        <div class="scholar btn-group jobGroup" role="group" aria-label="sch">
+            <p class="text-center align-middle">SCH</p>
+            <button class="form-button toggled" id="sch0" value="0">0</button>
+            <button class="form-button" id="sch1" value="1" onclick="btnColor('sch1','darkred')">1</button>
+            <button class="form-button" id="sch2" value="2" onclick="btnColor('sch2','darkred')">2</button>
+            <button class="form-button" id="sch3" value="3" onclick="btnColor('sch3','darkred')">3</button>
+            <button class="form-button" id="sch4" value="4" onclick="btnColor('sch4','darkred')">4</button>
+            <button class="form-button" id="sch5" value="5" onclick="btnColor('sch5','darkred')">5</button>
+            <button class="form-button" id="sch6" value="6" onclick="btnColor('sch6','darkred')">6</button>
         </div>
-        <div class="astrologian">
-            <label for="resistanceAst" class="form-label">AST</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceAst" value="0">
+        <div class="astrologian btn-group jobGroup" role="group" aria-label="ast">
+            <p class="text-center align-middle">AST</p>
+            <button class="form-button toggled" id="ast0" value="0">0</button>
+            <button class="form-button" id="ast1" value="1" onclick="btnColor('ast1','darkred')">1</button>
+            <button class="form-button" id="ast2" value="2" onclick="btnColor('ast2','darkred')">2</button>
+            <button class="form-button" id="ast3" value="3" onclick="btnColor('ast3','darkred')">3</button>
+            <button class="form-button" id="ast4" value="4" onclick="btnColor('ast4','darkred')">4</button>
+            <button class="form-button" id="ast5" value="5" onclick="btnColor('ast5','darkred')">5</button>
+            <button class="form-button" id="ast6" value="6" onclick="btnColor('ast6','darkred')">6</button>
         </div>
-        <div class="monk">
-            <label for="resistanceMnk" class="form-label">MNK</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceMnk" value="0">
+        <div class="monk btn-group jobGroup" role="group" aria-label="mnk">
+            <p class="text-center align-middle">MNK</p>
+            <button class="form-button toggled" id="mnk0" value="0">0</button>
+            <button class="form-button" id="mnk1" value="1" onclick="btnColor('mnk1','darkred')">1</button>
+            <button class="form-button" id="mnk2" value="2" onclick="btnColor('mnk2','darkred')">2</button>
+            <button class="form-button" id="mnk3" value="3" onclick="btnColor('mnk3','darkred')">3</button>
+            <button class="form-button" id="mnk4" value="4" onclick="btnColor('mnk4','darkred')">4</button>
+            <button class="form-button" id="mnk5" value="5" onclick="btnColor('mnk5','darkred')">5</button>
+            <button class="form-button" id="mnk6" value="6" onclick="btnColor('mnk6','darkred')">6</button>
         </div>
-        <div class="dragoon">
-            <label for="resistanceDrg" class="form-label">DRG</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDrg" value="0">
+        <div class="dragoon btn-group jobGroup" role="group" aria-label="drg">
+            <p class="text-center align-middle">DRG</p>
+            <button class="form-button toggled" id="drg0" value="0">0</button>
+            <button class="form-button" id="drg1" value="1" onclick="btnColor('drg1','darkred')">1</button>
+            <button class="form-button" id="drg2" value="2" onclick="btnColor('drg2','darkred')">2</button>
+            <button class="form-button" id="drg3" value="3" onclick="btnColor('drg3','darkred')">3</button>
+            <button class="form-button" id="drg4" value="4" onclick="btnColor('drg4','darkred')">4</button>
+            <button class="form-button" id="drg5" value="5" onclick="btnColor('drg5','darkred')">5</button>
+            <button class="form-button" id="drg6" value="6" onclick="btnColor('drg6','darkred')">6</button>
+        </div>
+        <div class="ninja btn-group jobGroup" role="group" aria-label="nin">
+            <p class="text-center align-middle">NIN</p>
+            <button class="form-button toggled" id="nin0" value="0">0</button>
+            <button class="form-button" id="nin1" value="1" onclick="btnColor('nin1','darkred')">1</button>
+            <button class="form-button" id="nin2" value="2" onclick="btnColor('nin2','darkred')">2</button>
+            <button class="form-button" id="nin3" value="3" onclick="btnColor('nin3','darkred')">3</button>
+            <button class="form-button" id="nin4" value="4" onclick="btnColor('nin4','darkred')">4</button>
+            <button class="form-button" id="nin5" value="5" onclick="btnColor('nin5','darkred')">5</button>
+            <button class="form-button" id="nin6" value="6" onclick="btnColor('nin6','darkred')">6</button>
+        </div>
+        <div class="samurai btn-group jobGroup" role="group" aria-label="sam">
+            <p class="text-center align-middle">SAM</p>
+            <button class="form-button toggled" id="sam0" value="0">0</button>
+            <button class="form-button" id="sam1" value="1" onclick="btnColor('sam1','darkred')">1</button>
+            <button class="form-button" id="sam2" value="2" onclick="btnColor('sam2','darkred')">2</button>
+            <button class="form-button" id="sam3" value="3" onclick="btnColor('sam3','darkred')">3</button>
+            <button class="form-button" id="sam4" value="4" onclick="btnColor('sam4','darkred')">4</button>
+            <button class="form-button" id="sam5" value="5" onclick="btnColor('sam5','darkred')">5</button>
+            <button class="form-button" id="sam6" value="6" onclick="btnColor('sam6','darkred')">6</button>
+        </div>
+        <div class="bard btn-group jobGroup" role="group" aria-label="brd">
+            <p class="text-center align-middle">BRD</p>
+            <button class="form-button toggled" id="brd0" value="0">0</button>
+            <button class="form-button" id="brd1" value="1" onclick="btnColor('brd1','darkred')">1</button>
+            <button class="form-button" id="brd2" value="2" onclick="btnColor('brd2','darkred')">2</button>
+            <button class="form-button" id="brd3" value="3" onclick="btnColor('brd3','darkred')">3</button>
+            <button class="form-button" id="brd4" value="4" onclick="btnColor('brd4','darkred')">4</button>
+            <button class="form-button" id="brd5" value="5" onclick="btnColor('brd5','darkred')">5</button>
+            <button class="form-button" id="brd6" value="6" onclick="btnColor('brd6','darkred')">6</button>
+        </div>
+        <div class="machinist btn-group jobGroup" role="group" aria-label="mch">
+            <p class="text-center align-middle">MCH</p>
+            <button class="form-button toggled" id="mch0" value="0" onclick="btnColor('mch0','darkred')">0</button>
+            <button class="form-button" id="mch1" value="1" onclick="btnColor('mch1','darkred')">1</button>
+            <button class="form-button" id="mch2" value="2" onclick="btnColor('mch2','darkred')">2</button>
+            <button class="form-button" id="mch3" value="3" onclick="btnColor('mch3','darkred')">3</button>
+            <button class="form-button" id="mch4" value="4" onclick="btnColor('mch4','darkred')">4</button>
+            <button class="form-button" id="mch5" value="5" onclick="btnColor('mch5','darkred')">5</button>
+            <button class="form-button" id="mch6" value="6" onclick="btnColor('mch6','darkred')">6</button>
+        </div>
+        <div class="blackmage btn-group jobGroup" role="group" aria-label="blm">
+            <p class="text-center align-middle">BLM</p>
+            <button class="form-button toggled" id="blm0" value="0">0</button>
+            <button class="form-button" id="blm1" value="1" onclick="btnColor('blm1','darkred')">1</button>
+            <button class="form-button" id="blm2" value="2" onclick="btnColor('blm2','darkred')">2</button>
+            <button class="form-button" id="blm3" value="3" onclick="btnColor('blm3','darkred')">3</button>
+            <button class="form-button" id="blm4" value="4" onclick="btnColor('blm4','darkred')">4</button>
+            <button class="form-button" id="blm5" value="5" onclick="btnColor('blm5','darkred')">5</button>
+            <button class="form-button" id="blm6" value="6" onclick="btnColor('blm6','darkred')">6</button>
+        </div>
+        <div class="summoner btn-group jobGroup" role="group" aria-label="smn">
+            <p class="text-center align-middle">SMN</p>
+            <button class="form-button toggled" id="smn0" value="0">0</button>
+            <button class="form-button" id="smn1" value="1" onclick="btnColor('smn1','darkred')">1</button>
+            <button class="form-button" id="smn2" value="2" onclick="btnColor('smn2','darkred')">2</button>
+            <button class="form-button" id="smn3" value="3" onclick="btnColor('smn3','darkred')">3</button>
+            <button class="form-button" id="smn4" value="4" onclick="btnColor('smn4','darkred')">4</button>
+            <button class="form-button" id="smn5" value="5" onclick="btnColor('smn5','darkred')">5</button>
+            <button class="form-button" id="smn6" value="6" onclick="btnColor('smn6','darkred')">6</button>
+        </div>
+        <div class="redmage btn-group jobGroup" role="group" aria-label="rdm">
+            <p class="text-center align-middle">RDM</p>
+            <button class="form-button toggled" id="rdm0" value="0">0</button>
+            <button class="form-button" id="rdm1" value="1" onclick="btnColor('rdm1','darkred')">1</button>
+            <button class="form-button" id="rdm2" value="2" onclick="btnColor('rdm2','darkred')">2</button>
+            <button class="form-button" id="rdm3" value="3" onclick="btnColor('rdm3','darkred')">3</button>
+            <button class="form-button" id="rdm4" value="4" onclick="btnColor('rdm4','darkred')">4</button>
+            <button class="form-button" id="rdm5" value="5" onclick="btnColor('rdm5','darkred')">5</button>
+            <button class="form-button" id="rdm6" value="6" onclick="btnColor('rdm6','darkred')">6</button>
         </div>
 
-        <div class="ninja">
-            <label for="resistanceNin" class="form-label">NIN</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceNin" value="0">
-        </div>
-        <div class="samurai">
-            <label for="resistanceSam" class="form-label">SAM</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSam" value="0">
-        </div>
-        <div class="bard">
-            <label for="resistanceBrd" class="form-label">BRD</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceBrd" value="0">
-        </div>
-        <div class="machinist">
-            <label for="resistanceMch" class="form-label">MCH</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceMch" value="0">
-        </div>
-        <div class="dancer">
-            <label for="resistanceDnc" class="form-label">DNC</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceDnc" value="0">
-        </div>
-        <div class="blackmage">
-            <label for="resistanceBlm" class="form-label">BLM</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceBlm" value="0">
-        </div>
-        <div class="summoner">
-            <label for="resistanceSmn" class="form-label">SMN</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceSmn" value="0">
-        </div>
-        <div class="redmage">
-            <label for="resistanceRdm" class="form-label">RDM</label>
-            <input type="range" class="form-range" min="0" max="7" step="1" id="resistanceRdm" value="0">
-        </div>
     </div>
 
     <h1 class="sectionLabel" style="padding-top:2vh; padding-bottom:2vh; ">Items</h1>
