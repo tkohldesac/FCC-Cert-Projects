@@ -58,7 +58,7 @@
             background-color: lightgray;
         }
         
-        .toggled {
+        .toggledOn {
             background-color: darkred;
             color: white;
         }
