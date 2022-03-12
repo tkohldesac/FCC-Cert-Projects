@@ -74,9 +74,9 @@ async function getCharacter() {
 
             if (jobName == "Paladin" || jobName == "Warrior" || jobName == "Gunbreaker" || jobName == "Dark Knight" || jobName == "Gladiator" || jobName == "Marauder") {
                 img.className = "icon tankIcon";
-            } else if (jobName == "White Mage" || jobName == "Astrologian" || jobName == "Scholar" || jobName == "Conjurer") {
+            } else if (jobName == "White Mage" || jobName == "Astrologian" || jobName == "Scholar" || jobName == "Conjurer" || jobName == "Sage") {
                 img.className = "icon healIcon";
-            } else if (jobName == "Pugilist" || jobName == "Monk" || jobName == "Lancer" || jobName == "Dragoon" || jobName == "Rogue" || jobName == "Ninja" || jobName == "Samurai") {
+            } else if (jobName == "Pugilist" || jobName == "Monk" || jobName == "Lancer" || jobName == "Dragoon" || jobName == "Rogue" || jobName == "Ninja" || jobName == "Samurai" || jobName == "Reaper") {
                 img.className = "icon dpsIcon meleeIcon";
             } else if (jobName == "Archer" || jobName == "Bard" || jobName == "Machinist" || jobName == "Dancer") {
                 img.className = "icon dpsIcon rangedIcon";
