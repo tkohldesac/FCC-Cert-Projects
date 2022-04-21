@@ -1,5 +1,7 @@
         body {
             background-color: rgb(37, 47, 194);
+            width: 80%;
+            margin: auto;
         }
         
         .sectionLabel {

@@ -2,8 +2,9 @@
                 background-color: darkslategray;
                 color: white;
                 text-align: center;
-                margin: 0;
+                margin: auto;
                 font-family: monospace;
+                width: 80%;
             }
             
             main {

@@ -16,77 +16,31 @@
 </head>
 
 <body>
-    <!-- Dropdown -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="/images/kohldesacLogoPlaceholder.png" href="#" alt="Kohldesac.com logo" width="30" height="24">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/HTML/resume.html">Resume</a>
-                    </li>
-                    <!--Projects Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="dropdown-item disabled">No Javascript:</li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/dyNxwwe">Technical Document</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/dyNxRqN">Form</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="https://codepen.io/tkohldesac/pen/vYgogRm">Tribute Page</a></li>
-                            <li>
+    <script id="replace_with_navbar" src="/Scripts/nav.js"></script>
+    <main class="container-md" id="main">
+        <div class="main-cont">
+            <div class="dark-mode-button">
+                <button id="btn-toggle-dark" onclick="myFunction()">
+                    <div class="moon-btn">
+                </button>
 
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="dropdown-item disabled">Some Javascript:</li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/HTML/colorFlipper.html">Color Flippers</a></li>
-                            <li><a class="dropdown-item" href="/HTML/calculator.html">Calculator</a></li>
-                            <li><a class="dropdown-item" href="/HTML/counter.html">Counter</a></li>
-                            <li><a class="dropdown-item" href="/HTML/reviewsProject.html">Reviews</a></li>
-                        </ul>
-                    </li>
-                    <!--Under Construction Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Under Construction
-                </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="dropdown-item disabled">Fun Stuff</li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="../HTML/character.html">FFXIV Character Lookup</a></li>
-                            <li><a class="dropdown-item" href="../HTML/relics.html">FFXIV Relics Tracker</a></li>
-                            <hr class="dropdown-divider">
-                    </li>
-
-                    </ul>
-                    </li>
-
-
-                </ul>
-
+                <script>
+                    function myFunction() {
+                        var main = document.getElementById("main");
+                        main.classList.toggle("dark-mode-main");
+                        var body = document.body;
+                        body.classList.toggle("dark-mode-body");
+                        var button = document.getElementById("btn-toggle-dark");
+                        button.classList.toggle("dark-mode-btn")
+                    }
+                </script>
             </div>
         </div>
-    </nav>
-    <main class="container-md">
         <div class="nameContainer"></div>
         <h1 id="name">Topher Kohlstedt</h1>
         <h2 id="profession">Web Developer</h2>
-        </div>
-        <h3 id="email">topher@kohldesac.com</h3>
+
+        <p id="email">topher@kohldesac.com</p>
         <p id="authorization">Authorized to work in the US for any employer</p>
 
         <div id="links">
@@ -101,12 +55,27 @@
                 <a href="https://www.kohldesac.com">
                     <img src="/images/window-alt-solid-24.png" width="30px"> </h4>
             </a>
+
         </div>
 
         <div id="experience">
 
             <h2 id="work">Experience</h2>
             <div id="work1">
+                <h3 id="role">Remote Service Desk Administrator</h3>
+                <h4 id="company">Convergence Networks - Remote - Portland, Oregon</h4>
+                <h5 id="workDate">August 2021 - Current</h5>
+                <ul>
+                    <li>Daily troubleshooting of servers, workstations, laptops, terminals running a wide variety of operating systems as well as other hardware for 100+ clients </li>
+                    <li>Azure AD and Office 365 Administration for user onboarding, maintenance and turndowns</li>
+                    <li>Volunteered for and built the Request Team role while continuing normal Service Desk duties</li>
+                    <li>Actively trained and helped onboard new coworkers</li>
+                    <li>Daily remote support using a variety of remote software including Kaseya, ConnectWise, QuickAssist and LogMeIn software</li>
+                    <li>Exceeded expectations for all goals set by management</li>
+                    <li>Regular public shout-outs from coworkers across the organization</li>
+                </ul>
+            </div>
+            <div id="work2">
                 <h3 id="role">IT Support Technician</h3>
                 <h4 id="company">On Line Support - Vancouver, Washington</h4>
                 <h5 id="workDate">September 2020 - July 2021</h5>
@@ -121,7 +90,7 @@
                     <li>Allworx hardphone/softphone support certified</li>
                 </ul>
             </div>
-            <div id="work2">
+            <div id="work3">
                 <h3 id="role">IT Help Desk</h3>
                 <h4 id="company">Govig & Associates - Scottsdale, Arizona</h4>
                 <h5 id="workDate">April 2019 - September 2020</h5>
@@ -136,7 +105,7 @@
                     <li>Daily training of both new hires and seasoned employees via conferencing software</li>
                 </ul>
             </div>
-            <div id="work3">
+            <div id="work4">
                 <h3 id="role">Provisioning Specialist</h3>
                 <h4 id="company">Edgenuity - Scottsdale, Arizona</h4>
                 <h5 id="workDate">April 2017 - April 2019</h5>
@@ -266,7 +235,7 @@
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/60a858d7e81d836096a9878df266b976eed53dc074545cb7 ">Highly Proficient</a></p>
         </div>
         </div>
-
+        </div>
     </main>
 
 

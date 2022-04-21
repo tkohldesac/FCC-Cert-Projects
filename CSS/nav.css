@@ -9,8 +9,8 @@
 .container-fluid img {
     width: auto;
     height: 70px;
-    border-style: solid;
-    padding: 5px;
+    border-style: none;
+    padding: 0px;
     border-color: gray;
 }
 
@@ -19,6 +19,35 @@
 }
 
 .container-fluid {
-    font-size: 26px;
+    font-size: 15;
     font-family: sans-serif;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.nav-flex-container {
+    display: flex;
+}
+
+.projects-text {
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: groove;
+    border-right-style: none;
+}
+
+.resume-text {
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: groove;
+    border-right-style: none;
+}
+
+.construction-text {
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: groove;
+    border-right-style: none;
 }
