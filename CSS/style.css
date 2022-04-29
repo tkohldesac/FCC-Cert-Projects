@@ -15,15 +15,9 @@ body {
     border-left-style: groove;
     border-right-style: groove;
     max-height: 100%;
+    overflow: hidden;
 }
 
-.profilePic {
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    width: 50%;
-    margin: auto;
-}
 
 .imageBorder {
     width: 40vh;
@@ -47,11 +41,42 @@ body {
     font-weight: bolder;
 }
 
-.descPara-cont {
-    background-color: white;
+.content-wrapper {
+    
+    display:flex;
+    flex-direction:column;
+}
+.top-half {
+    background-color: red;
     min-width: 80%;
-    max-height: 100%;
+    min-height: 50%;
     font-size: xx-large;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.bottom-half {
+    background-color: pink;
+    min-width: 80%;
+    min-height:50px;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+    
+}
+
+.descPara {
+    /* background-color: red; */
+    position: sticky;
+    margin-bottom: 0;
+    min-height: 100%;
 }
 
 .descPara p {
