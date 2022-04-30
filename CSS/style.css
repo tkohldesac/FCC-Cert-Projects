@@ -39,15 +39,24 @@ body {
     font-size: 5rem;
     letter-spacing: 1rem;
     font-weight: bolder;
+    border-bottom:solid;
+    width:80%;
+    text-align:center;
+    display:flex;
+    margin-left:auto;
 }
 
 .content-wrapper {
     
     display:flex;
     flex-direction:column;
+    position:sticky;
+    align-content:flex-end;
+    min-height:100vh;
+    flex-basis:auto;
 }
 .top-half {
-    background-color: red;
+    
     min-width: 80%;
     min-height: 50%;
     font-size: xx-large;
@@ -56,11 +65,14 @@ body {
     padding-bottom: 5%;
     width: 50%;
     margin: auto;
+    margin-bottom:0;
+    
+
     
 }
 
 .bottom-half {
-    background-color: pink;
+    background-color: ;
     min-width: 80%;
     min-height:50px;
     font-size: xx-large;
@@ -69,6 +81,9 @@ body {
     padding-bottom: 5%;
     width: 50%;
     margin: auto;
+    margin-bottom:30%;
+    
+    
     
 }
 
@@ -111,6 +126,7 @@ body {
 @media screen and (max-width:375px) {
     .name {
         letter-spacing: 0.2rem;
+        font-size:1em;
     }
     .imageBorder {
         margin-left: -18vw;
