@@ -20,43 +20,57 @@
     <script id="replace_with_navbar" src="/Scripts/nav.js"></script>
 
     <div>
-        <h1 class="text-center text-uppercase name">Topher Kohlstedt</h1>
+        <h1 class="text-center text-uppercase name">
+            Topher Kohlstedt
+        </h1>
     </div>
 
-
-<div class="content-wrapper">
-    <!-- <div class="top-half"></div> -->
-
-    <!-- <div class="bottom-half"> -->
-        <div class="d-flex align-items-start justify-content-end">
-            <div class="tab-content" id="v-pills-tabContent">
-                
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                <p>testing</p>
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <p>Work and stuff and things</p>
-  
-                </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    <p>Interests and stuff and other things lol</p>
-  
-                </div>
-              
-            </div>
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Education</button>
-              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Work</button>
-              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Interests</button>
-              
-            </div>
-
-
-          <!-- </div> -->
-          
-          
+    <div class="menu-wrapper">
+        
+    <div id="Education" class="tabcontent" style="display:none;">
+        <h3>Education</h3>
+        <ul>
+            <li>Highland High School - 2004</li>
+            <li>Rio Salado College - 2013</li>
+            <li>Web Development - Ongoing</li>
+        </ul>
+      </div>
+      
+      <div id="Work" class="tabcontent" style="display:none;">
+        <h3>Work</h3>
+        <ul>
+            <li>Customer Service</li>
+            <p>I began my professional life developing soft skills and training myself to  feel comfortable talking to strangers. These positions ranged from cashier positions and in-person sales to making extremely uncomfortable cold-calls to the recently widowed.</p>
+            <li>Technical Support</li>
+            <p>These Customer service calls gradually transitioned away from cold calls to troubleshooting, resolving and teaching customers how to use technology.</p>
+            <li>IT Administration</li>
+            <p>This is the culmination of all of my career. I have the soft skills and technical background necessary to move from individuals as my customers to entire organizations. </p>
+            <li>Web Development</li>
+            <p>I've always found it difficult to find something </p>
+        </ul>
+      </div>
+      
+      <div id="Interests" class="tabcontent" style="display:none;">
+        <h3>Interests</h3>
+        <p>I have a variety of things that interest me that I'm pursuing non-professionally:</p>
+        <ul>
+            <li>Permaculture</li>
+            <li>Chickens</li>
+            <li>My Antisocial Network</li>
+            <li>Various Electronics Projects</li>
+            <li>And much, much more...</li>
+        </ul>
+      </div> 
+      <div id="blank" class="tabcontent disable-select">
+        
+        
+      </div> 
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+        <button class="tablinks" onclick="openCity(event, 'Work')">Work</button>
+        <button class="tablinks" onclick="openCity(event, 'Interests')">Interests</button>
+      </div>
     </div>
-</div>
 
 
 
