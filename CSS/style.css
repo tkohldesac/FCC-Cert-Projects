@@ -5,6 +5,7 @@ html {
 }
 * {
     font-family:Arial, Helvetica, sans-serif;
+   
 }
 
 body {
@@ -22,21 +23,7 @@ body {
 }
 
 
-.imageBorder {
-    width: 40vh;
-    height: 40vh;
-    margin-left: 10vw;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 0, 0);
-    border-radius: 50%;
-    background-color: rgb(61, 61, 58);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: local;
-    background-image: url(/images/Bouchsloth.png);
-    background-size: 100%;
-}
+
 
 .name {
     font-size: 5rem;
@@ -74,7 +61,9 @@ body {
     
 }
 
-
+.squareBullets {
+    list-style:square;
+}
 .menu-wrapper {
     width:80%;
     margin:auto;
@@ -132,9 +121,19 @@ body {
   height: 300px;
   border-bottom:none;
   padding-top:2%;
+  max-height:50%;
+  overflow: hidden;
   
 }
+.nav-pills .nav-link.active { background-color: black       ;}
 
+.nav-link {
+    color:black;
+}
+
+.nav-link:hover {
+    color:darkgray;
+}
 
 @media screen and (max-width: 1280px) {
     .imageBorder {
@@ -159,16 +158,22 @@ body {
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:400px) {
     .name {
         letter-spacing: 0.2rem;
         font-size:1em;
-    }
-    .imageBorder {
-        margin-left: -18vw;
-    }
-    .descPara {
-        position: absolute;
-    }
+        margin:auto;
 
+}
+.menu-wrapper {
+    width:100%;
+    font-size:large;
+}
+.tab {
+    height: 100%;
+}
+.tabcontent {
+    height:100%;
+    border-right:none;
+}
 }
