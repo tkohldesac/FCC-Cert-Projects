@@ -167,7 +167,8 @@ body {
 }
 .menu-wrapper {
     width:100%;
-    font-size:large;
+    font-size:medium;
+    height:30%;
 }
 .tab {
     height: 100%;
@@ -175,5 +176,20 @@ body {
 .tabcontent {
     height:100%;
     border-right:none;
+    font-size:small;
 }
+html {
+    height:100%;
+}
+
+.nav-pills .nav-link { 
+    font-size:small;
+    margin:auto;
+}
+/* .tabcontent {
+    display:flex;
+    margin:auto;
+    align-items: center;
+    text-align:center;
+} */
 }
