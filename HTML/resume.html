@@ -28,10 +28,23 @@
                     function myFunction() {
                         var main = document.getElementById("main");
                         main.classList.toggle("dark-mode-main");
+                        console.log(main.classList);
                         var body = document.body;
                         body.classList.toggle("dark-mode-body");
+
+                        var section = document.getElementsByClassName("section-content")
+                        for (let i = 0; i < section.length; i++) {
+                            section[i].classList.toggle("dark-mode-section");
+                        }
+                                               
+                       
+                        
+
                         var button = document.getElementById("btn-toggle-dark");
                         button.classList.toggle("dark-mode-btn")
+                        var button = document.getElementById("btn-toggle-dark");
+                        button.classList.toggle("dark-mode-section")
+                        
                     }
                 </script>
             </div>
@@ -60,8 +73,8 @@
 
         <div id="experience">
 
-            <h2 id="work">Experience</h2>
-            <div id="work1">
+            <h2 id="work" >Experience</h2>
+            <div id="work1" class="section-content">
                 <h3 id="role">Remote Service Desk Administrator</h3>
                 <h4 id="company">Convergence Networks - Remote - Portland, Oregon</h4>
                 <h5 id="workDate">August 2021 - Current</h5>
@@ -75,7 +88,7 @@
                     <li>Regular public shout-outs from coworkers across the organization</li>
                 </ul>
             </div>
-            <div id="work2">
+            <div id="work2" class="section-content">
                 <h3 id="role">IT Support Technician</h3>
                 <h4 id="company">On Line Support - Vancouver, Washington</h4>
                 <h5 id="workDate">September 2020 - July 2021</h5>
@@ -90,7 +103,7 @@
                     <li>Allworx hardphone/softphone support certified</li>
                 </ul>
             </div>
-            <div id="work3">
+            <div id="work3" class="section-content">
                 <h3 id="role">IT Help Desk</h3>
                 <h4 id="company">Govig & Associates - Scottsdale, Arizona</h4>
                 <h5 id="workDate">April 2019 - September 2020</h5>
@@ -106,7 +119,7 @@
                 </ul>
             </div>
             
-            <div id="work4">
+            <div id="work4" class="section-content">
                 <h3 id="role">Provisioning Specialist</h3>
                 <h4 id="company">Edgenuity - Scottsdale, Arizona</h4>
                 <h5 id="workDate">April 2017 - April 2019</h5>
@@ -126,7 +139,7 @@
 
             <h2>Education</h2>
 
-            <div id="edu2">
+            <div id="edu2" class="section-content">
                 <h3>Rio Salado College</h3>
                 <h4>Associates of Applied Science in Computer Science - May 2013</h4>
                 <h4>Tempe, Arizona</h4>
@@ -137,7 +150,7 @@
                 </ul>
 
             </div>
-            <div id="edu1">
+            <div id="edu1" class="section-content">
                 <h3>Highland High School</h3>
                 <h4>High School Diploma - May 2004</h4>
 
@@ -146,7 +159,7 @@
 
         <div id="skills">
             <h2>Skills</h2>
-            <div id="skillsList" class="row">
+            <div id="skillsList" class="row section-content">
 
                 <li class="col-xs-12col-sm-6 col-md-4">Japanese</li>
                 <li class="col-xs-12 col-sm-6 col-md-4">VSCode</li>
@@ -188,48 +201,48 @@
         <div id="assessmentTitle">
             <h2>Indeed Assessments</h2>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Technical Support — Highly Proficient</h3>
             <p>June 2020</p>
             <p>Performing software, hardware, and network operations.</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/761d2179e088d604ab7630f891e195d3eed53dc074545cb7 ">Highly Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Call Center Customer Service — Highly Proficient</h3>
             <p>June 2020</p>
             <p>Applying customer service skills in a call center setting.</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/09b7a85e690d3adb0dadd4a0d93ce214eed53dc074545cb7 ">Highly Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Basic Computer Skills: PC — Highly Proficient</h3>
             <p>June 2020</p>
             <p>Performing basic computer operations, navigating a Windows OS, and troubleshooting common computer problems.</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/46cac74be29ff255e935138706e5c70ceed53dc074545cb7 ">Highly Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Customer Service Fit — Proficient</h3>
             <p>June 2020</p>
             <p>Measures the traits that are important for success for customer service roles.</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/b35b4b1bee78c74059568db49016797eeed53dc074545cb7 ">Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Technical Support: Customer Situations — Proficient</h3>
             <p>August 2020</p>
             <p>Responding to technical support situations with sensitivity</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/a5ef94411f99db48561e1448ec59da0feed53dc074545cb7 ">Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Technical support — Expert</h3>
             <p>January 2021</p>
             <p>Performing software, hardware, and network operations</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/ce8b0889159bef974c2c1798b35c8d3ceed53dc074545cb7 ">Expert</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Work style: Conscientiousness — Highly Proficient</h3>
             <p>January 2021Tendency to be well-organized, rule-abiding, and hard-working</p>
             <p>Full results: <a href="https://share.indeedassessments.com/attempts/4d5c73ed7dbe855e7001ebc9f5a6e2e3eed53dc074545cb7 ">Highly Proficient</a></p>
         </div>
-        <div id="assessment">
+        <div id="assessment" class="section-content">
             <h3>Attention to detail — Highly Proficient</h3>
             <p>January 2021</p>
             <p>Identifying differences in materials, following instructions, and detecting details among distracting information</p>
