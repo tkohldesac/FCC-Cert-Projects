@@ -183,11 +183,12 @@ body {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .name {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1em;
         font-size:1em;
         margin:auto;
+
 
 }
 .menu-wrapper {
@@ -201,6 +202,17 @@ body {
     border-right:none;
     font-size:small;
     /* overflow:visible; */
+    border-left:0;
+    box-shadow:0 0 0;
+    border-top-right-radius: 15px;
+}
+
+.tab  {
+    margin-right: 0;
+    margin-left:0;
+    width:30%;
+    font-size:small;
+    font-weight:bolder;
 }
 html {
     height:100%;
@@ -209,11 +221,7 @@ html {
 .nav-pills .nav-link { 
     font-size:small;
     margin:auto;
+    
 }
-/* .tabcontent {
-    display:flex;
-    margin:auto;
-    align-items: center;
-    text-align:center;
-} */
+
 }
