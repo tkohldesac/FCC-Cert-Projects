@@ -27,7 +27,7 @@
 
     <div class="menu-wrapper">
         
-    <div id="Education" class="tabcontent" style="display:none;">
+    <div id="Education" class="tabcontent">
         
         <ul class="squareBullets">
             <li>Highland High School - 2004</li>
@@ -87,14 +87,15 @@
             
         </ul>
       </div> 
-      <div id="blank" class="tabcontent disable-select">
+      <!-- <div id="blank" class="tabcontent disable-select"> -->
         
         
       </div> 
+
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
-        <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
-        <button class="tablinks" onclick="openTab(event, 'Interests')">Interests</button>
+        <button class="tablinks active education-tab" onclick="openTab(event, 'Education')">Education</button>
+        <button class="tablinks work-tab" onclick="openTab(event, 'Work')">Work</button>
+        <button class="tablinks interests-tab" onclick="openTab(event, 'Interests')">Interests</button>
       </div>
     </div>
 

@@ -67,7 +67,7 @@ body {
 .menu-wrapper {
     width:80%;
     margin:auto;
-    margin-right:0;
+    
     margin-top:5%;
 }
 
@@ -79,8 +79,11 @@ body {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 30%;
-  height: 300px;
+  width: 20%;
+  height: 100%;
+  border-radius:25px;
+  margin-left:10%;
+  box-shadow: 2px 5px 5px black;
   
 }
 
@@ -100,6 +103,23 @@ body {
   padding-left:10%;
   
 }
+.tab button{
+    border-radius: 25px;
+}
+
+.education-tab button{
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+}
+.work-tab {
+    border-radius:0px;
+}
+.interests-tab {
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+} 
+
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -115,14 +135,18 @@ body {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
   width: 70%;
-  border-left: none;
   height: 300px;
   border-bottom:none;
+  border-right:1px none;
   padding-top:2%;
   max-height:50%;
   overflow: hidden;
+  border-radius:15px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: inset 2px 5px 5px black;
   
 }
 .nav-pills .nav-link.active { background-color: black       ;}
@@ -130,6 +154,7 @@ body {
 .nav-link {
     color:black;
 }
+
 
 .nav-link:hover {
     color:darkgray;
@@ -170,9 +195,7 @@ body {
     font-size:medium;
     height:30%;
 }
-.tab {
-    height: 100vh;
-}
+
 .tabcontent {
     height:100%;
     border-right:none;
