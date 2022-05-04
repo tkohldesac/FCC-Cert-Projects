@@ -153,7 +153,7 @@ h2 {
 }
 
 .moon-btn {
-    background: url(/images/moon.svg) no-repeat top left;
+    background: url(/Projects/images/moon.svg) no-repeat top left;
     background-size: contain;
     cursor: pointer;
     min-height: 25px;
