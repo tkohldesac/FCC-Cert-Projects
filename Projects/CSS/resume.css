@@ -1,0 +1,180 @@
+body {
+    justify-content: center;
+    background-color: gray;
+    font-family: sans-serif;
+    margin: 0;
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: ivory;
+    padding: 5vw;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius:7px;
+}
+
+h5 {
+    padding-top: 5px;
+}
+
+#profession {
+    padding-top: 10px;
+}
+
+#experience h2,
+#skills h2 {
+    padding-bottom: 5px;
+}
+
+#education h2,
+#assessmentTitle h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#experience h3,
+h4 {
+    padding-top: 1rem;
+}
+
+h2 {
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+
+    border-color: lightgray;
+    color: darkslategray;
+}
+
+#links {
+    text-align: right;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#workDate {
+    padding-left: 2%;
+    color: darkslategray;
+}
+
+.section-content {
+    border-left: solid;
+    border-bottom:solid;
+    border-color: #728883;
+    border-right: none;
+    border-top: none;
+    border-radius: 2px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    margin-bottom:1%;
+    border-radius:15px;
+    border-bottom-right-radius:0;
+    border-top-left-radius:0;
+    box-shadow: -2px 2px 3px;
+    
+}
+
+#skillsList {
+    padding-left: 2rem;
+    margin-left: auto;
+}
+
+#work2,
+#edu1,
+#assessment {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#name,
+#profession {
+    text-align: center;
+}
+
+#profession {
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+    color: darkslategray
+}
+
+#email,
+#authorization {
+    margin-top: 0px;
+    color: darkslategray;
+    text-align: right;
+}
+
+#role {
+    margin-bottom: -10px;
+}
+
+#workDate {
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 768) {
+    main {
+        margin-top: 0;
+    }
+}
+
+.dark-mode-main {
+    background-color: #666;
+    color: ivory;
+    text-shadow: 1px 1px #000;
+}
+
+.dark-mode-body {
+    background-color: #333;
+    text-shadow: 1px 1px #fff;
+}
+
+.main-cont {
+    width: 75%;
+    margin: auto;
+}
+
+.dark-mode-button button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 50%;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+.moon-btn {
+    background: url(/Projects/images/moon.svg) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.dark-mode-btn {
+    -webkit-filter: invert(100%);
+    /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.dark-mode-section {
+    border-color:#333;
+    
+}
+
+#links img {
+    box-shadow: -2px 2px 2px #333;
+    border-radius:5px;
+    border: solid 1px;
+    border-color: #333;
+
+}
