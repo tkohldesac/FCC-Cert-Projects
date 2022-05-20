@@ -24,6 +24,7 @@
     
     <link rel="stylesheet" href="/Projects/CSS/character.css" />
     <link href="/SASS/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="/Projects/Scripts/interaction.js" defer></script>
   </head>
 
   <body class="bg-secondary text-light m-auto">
@@ -40,15 +41,24 @@
         </div>
 
 
-<div class="container">
-    <div class="row">
+<div class="container bg-primary p-3 rounded-2" style="border:solid 2px; box-shadow: 3px 3px 10px black;">
+    <div class="row" style="padding-right:2%;">
         <div class="input-group col">
+          <div class="inputWrapper">
             <input type="text" id="inputID" class="form-control border-dark" placeholder="Enter ID" aria-label="Enter ID" aria-describedby="button-addon2"></input>
-            <button class="btn btn-outline-dark" type="button" id="button-addon2">Submit</button>
+          </div>
+
+            <button class="btn btn-outline-light" type="button" id="button-addon2">
+              Submit
+            </button>
+
          </div>
-         <div id="jobs" class="bg-dark rounded-3 col-6 m-auto center text-center">Jobs<br>
+         <div class="row img-fluid col-4"> <img id="portrait"></img></div>
+
+
+         <div id="jobs" class="bg-dark rounded-3 col-6 m-auto center text-center"><h3>Jobs</h3><br>
         </div>
-        <div class="row"> <img id="portrait"></img></div>
+
     </div>
 </div>
 
@@ -63,5 +73,6 @@
 
       </div>
     </main>
+   
   </body>
 </html>

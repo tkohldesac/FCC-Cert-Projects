@@ -14,26 +14,15 @@ if (userKey === null) {
 
 console.log(api_url);
 
-//This calls the function below to access the API//
-
 //This is the function that gets access to the API. //
 async function getCharacter() {
   const response = await fetch(api_url);
   const character = await response.json();
   //This line gets and sets the character image in the JSON file
-  //   document.getElementById("userKey"); This is unnecessary, userKey was defined above. I'm leaving this here in case it breaks something...
   const portraitImg = document.getElementById("portrait");
 
-  portraitImg.style.backgroundImage =
-    "url(" + character.Character.Portrait + ")";
-  portraitImgName = "img-fluid";
-  //
-  //Create elements for each job
+  portraitImg.src = character.Character.Portrait;
 
-  //Set icons to job icons
-  //Add Acronym above job icons
-  //Add levels next to job icons
-  // document.getElementById('jobs')
   var jobs = character.Character.ClassJobs;
 
   //Create elements for inside the Jobs div
@@ -57,10 +46,8 @@ async function getCharacter() {
 
     //...And the string of the job's name and the job's level...
     newElement.innerText = `${jobName} - ${jobLevel}`;
-    //... And the class of 'backgroundCover' to make sure background-size is 'cover'...
 
-    newElement.className =
-      "backgroundCover portrait jobDiv d-inline-block pb-5";
+    newElement.className = "pb-5";
     //document.getElementById selects the 'jobs' div, then appends the 'newElement' to the end. The result is that a div is created with all of the above attributes.
     document.getElementById("jobs").appendChild(newElement);
     // console.log(jobs[i].UnlockedState.Name);
@@ -125,14 +112,20 @@ async function getCharacter() {
       document.getElementById(jobName).prepend(img);
     }
   }
-  //Convert job names to job acronyms
-  //Create Elements for each job
+  const submit = document.querySelector("#button-addon2");
+  const inputText = document.querySelector("#inputID");
 
-  //function to create divs
-  // function addElement() {
+  submit.onclick = function () {
+    userKey = inputText.value;
+    document.getElementById("userKey").innerText = `Character ID: ${userKey}`;
+    var api_url = url + userKey;
 
-  //
-  // }
-
-  //This logs all the names of the jobs. Need to convert to the in-game acronyms
+    //clear image
+    //delete all job icons
+    getCharacter();
+    // createImage();
+    console.log(userKey);
+    console.log(api_url);
+    console.log(userName);
+  };
 }
