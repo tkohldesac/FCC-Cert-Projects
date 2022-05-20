@@ -31,3 +31,22 @@ main {
 .input-group {
   max-height: 25px;
 }
+
+.tankJobs {
+  background-color: blue;
+}
+.healJobs {
+  background-color: green;
+}
+.meleeJobs {
+  background-color: red;
+}
+.rangedJobs {
+  background-color: red;
+}
+.magicJobs {
+  background-color: red;
+}
+.otherJobs {
+  background-color: gray;
+}
