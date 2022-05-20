@@ -1,6 +1,6 @@
 //Set the URL up. userKey will eventually be provided by a person. Using my own character for testing.//
 const url = "https://xivapi.com/character/";
-var userKey = "1814929";
+var userKey = "5004548";
 
 // var userKey = prompt("Bouch - 6693414 Sev - 1585713 Pacl - 5004548 Crux - 12450522 Gristle - 1814929 Zan - 9245936", "1814929");
 
@@ -22,9 +22,11 @@ async function getCharacter() {
   const character = await response.json();
   //This line gets and sets the character image in the JSON file
   //   document.getElementById("userKey"); This is unnecessary, userKey was defined above. I'm leaving this here in case it breaks something...
+  const portraitImg = document.getElementById("portrait");
 
-  document.getElementById("portrait").style.backgroundImage =
+  portraitImg.style.backgroundImage =
     "url(" + character.Character.Portrait + ")";
+  portraitImgName = "img-fluid";
   //
   //Create elements for each job
 
@@ -43,13 +45,13 @@ async function getCharacter() {
     //Set the Character Name text above the portrait
     document.getElementById(
       "userName"
-    ).innerText = `Character Name: ${character.Character.Name}`;
+    ).innerText = `${character.Character.Name}`;
     //set the Character ID text above the portrait
     document.getElementById(
       "userKey"
     ).innerText = `Character ID: ${character.Character.ID}`;
-    //Creates a new div that...
-    let newElement = document.createElement("div");
+    //Creates a new span that...
+    let newElement = document.createElement("span");
     //...has the id of the job's name...
     newElement.setAttribute("id", `${jobName}`);
 
@@ -57,10 +59,11 @@ async function getCharacter() {
     newElement.innerText = `${jobName} - ${jobLevel}`;
     //... And the class of 'backgroundCover' to make sure background-size is 'cover'...
 
-    newElement.className = "backgroundCover portrait jobDiv";
+    newElement.className =
+      "backgroundCover portrait jobDiv d-inline-block pb-5";
     //document.getElementById selects the 'jobs' div, then appends the 'newElement' to the end. The result is that a div is created with all of the above attributes.
     document.getElementById("jobs").appendChild(newElement);
-    console.log(jobs[i].UnlockedState.Name);
+    // console.log(jobs[i].UnlockedState.Name);
 
     createImage();
 
@@ -70,9 +73,9 @@ async function getCharacter() {
       var jobLower = jobs[i].UnlockedState.Name.toLowerCase().replace(/ /g, "");
       var jobImg = `../images/${jobLower}.png`;
       img.src = `${jobImg}`;
-      console.log(jobImg);
+      // console.log(jobImg);
 
-      img.className = "icon";
+      img.className = "icon rounded-5 bg-secondary";
 
       if (
         jobName == "Paladin" ||
