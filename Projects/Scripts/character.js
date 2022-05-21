@@ -3,7 +3,6 @@ const url = "https://xivapi.com/character/";
 var userKey = "5004548";
 
 // var userKey = prompt("Bouch - 6693414 Sev - 1585713 Pacl - 5004548 Crux - 12450522 Gristle - 1814929 Zan - 9245936", "1814929");
-
 var api_url = url + userKey;
 
 if (userKey === null) {
@@ -112,10 +111,10 @@ async function getCharacter() {
       document.getElementById(jobName).prepend(img);
     }
   }
-  const submit = document.querySelector("#button-addon2");
+  const subButton = document.querySelector("#button-addon2");
   const inputText = document.querySelector("#inputID");
 
-  submit.onclick = function () {
+  subButton.onclick = function () {
     userKey = inputText.value;
     document.getElementById("userKey").innerText = `Character ID: ${userKey}`;
     var api_url = url + userKey;
