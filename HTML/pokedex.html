@@ -8,90 +8,58 @@
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="/SASS/main.css" rel="stylesheet" />
   </head>
-  <body
-    class="m-auto bg-danger w-75 pt-5 pb-5 h-100 border-dark"
-    style="
-      padding-left: 0px;
-      border-left: black solid;
-      border-right: black solid;
-    "
-    ;
-  >
-    <div class="row">
-      <!-- Left Column Start -->
-      <div class="info col-md-3 offset-2">
-        <!-- Image Start -->
-        <div
-          class="image-wrapper text-center bg-light"
-          style="border: black solid 2px; box-shadow: 2px 2px 5px"
-        >
-          <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
-            ="imgSprite img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} w-50"
-            alt=""
-            id="imgSprite"
-          />
-        </div>
-        <!-- Image End -->
-        <br />
-        <!-- Name Start -->
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control pkmnName"
-            id="floatingInput"
-            disabled
-            style="
-              border: black solid 2px;
-              box-shadow: 2px 2px 5px;
-              background-color: white;
-            "
-          />
-          <label for="floatingInput">PKMN Name</label>
-        </div>
-        <!-- Name End -->
-        <!-- Pokemon Number Start -->
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control pkmnNum"
-            id="floatingInput"
-            disabled
-            style="
-              border: black solid 2px;
-              box-shadow: 2px 2px 5px;
-              background-color: white;
-            "
-          />
-          <label for="floatingInput">PKMN Number</label>
-        </div>
-        <!-- Pokemon Number End -->
 
-        <button id="btnPrevPkmn" class="btn bg-dark text-light">
-          Previous
-        </button>
-        <button id="btnNextPkmn" class="btn bg-dark text-light">Next</button>
+  <body style="padding-left: 0px; padding-top: 5%">
+    <div
+      class="container"
+      style="
+        width: 80%;
+        background-color: red;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      "
+    >
+      <div class="input-group input-group-lg">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+        />
+        <span class="input-group-text" id="inputGroup-sizing-lg">Search</span>
       </div>
-      <!-- Left Column End -->
-      <!-- Right Column Start -->
-      <div class="description col-md-3 offset-2">
-        <div
-          class="card h-75"
-          disabled
-          style="border: black solid 2px; box-shadow: 2px 2px 5px"
-        >
-          <p class="p-2 pkmnStats d-none" id="pkmnStats">
-            This is some some stats text
-          </p>
-          <p class="p-2 pkmnEntry" id="pkmnEntry">This is some entry text</p>
-        </div>
-        <div class="btnContainer pt-2">
-          <button id="btnStats" class="btn bg-dark text-light">Stats</button>
-          <button id="btnEntry" class="btn bg-dark text-light">Entry</button>
-        </div>
+
+      <div class="info">
+        <p class="pkmnName"></p>
       </div>
-      <!-- Right Column End -->
+      <fieldset disabled="disabled">
+        <form class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            value="Bulbasaur"
+          />
+          <label for="floatingInputInvalid">Pokemon Name</label>
+        </form>
+        <form class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            value="001"
+          />
+          <label for="floatingInputInvalid">Pokemon Number</label>
+        </form>
+      </fieldset>
+
+      <div class="m-auto">
+        <button id="nextPage" class="btn bg-secondary">Up</button>
+        <button id="prev" class="btn bg-secondary">Down</button>
+
+        <button id="prevPage" class="btn bg-secondary">Left</button>
+        <button id="random" class="btn bg-secondary">Right</button>
+      </div>
     </div>
-    <script src="/js/pokedex.js"></script>
   </body>
 </html>
