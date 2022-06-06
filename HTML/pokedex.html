@@ -8,13 +8,57 @@
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="/SASS/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <div id="number">number</div>
-    <div id="name">name</div>
+  <body style="padding-left: 0px; padding-top: 5%">
+    <div
+      class="container"
+      style="
+        width: 80%;
+        background-color: red;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      "
+    >
+      <div class="input-group input-group-lg">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+        />
+        <span class="input-group-text" id="inputGroup-sizing-lg">Search</span>
+      </div>
 
-    <button id="search" class="btn-outline-danger btn-dark">Submit</button>
-    <button id="previous">Previous</button>
-    <button id="next">Next</button>
-    <button id="random">Random</button>
+      <div class="info">
+        <p class="pkmnName"></p>
+      </div>
+      <fieldset disabled="disabled">
+        <form class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            value="Bulbasaur"
+          />
+          <label for="floatingInputInvalid">Pokemon Name</label>
+        </form>
+        <form class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            value="001"
+          />
+          <label for="floatingInputInvalid">Pokemon Number</label>
+        </form>
+      </fieldset>
+
+      <div class="m-auto">
+        <button id="nextPage" class="btn bg-secondary">Up</button>
+        <button id="prev" class="btn bg-secondary">Down</button>
+
+        <button id="prevPage" class="btn bg-secondary">Left</button>
+        <button id="random" class="btn bg-secondary">Right</button>
+      </div>
+    </div>
   </body>
 </html>
