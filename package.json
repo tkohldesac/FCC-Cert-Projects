@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/tkohldesac/Portfolio#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
+    "bootstrap": "^5.2.0-beta1",
+    "bulma": "^0.9.4"
+  },
+  "devDependencies": {
+    "@vizuaalog/bulmajs": "^0.12.1"
   }
 }
