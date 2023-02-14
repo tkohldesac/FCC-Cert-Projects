@@ -1,12 +1,26 @@
+
 //Set the URL up. userKey will eventually be provided by a person. Using my own character for testing.//
 const url = "https://xivapi.com/character/";
-var userKey = "5004548";
+var userKey = "12450522";
 
 // var userKey = prompt("Bouch - 6693414 Sev - 1585713 Pacl - 5004548 Crux - 12450522 Gristle - 1814929 Zan - 9245936", "1814929");
 var api_url = url + userKey;
 
 if (userKey === null) {
-  console.log("error");
+  console.log("error");//Set the URL up. userKey will eventually be provided by a person. Using my own character for testing.//
+  const url = "https://xivapi.com/character/";
+  var userKey = "12450522";
+  
+  // var userKey = prompt("Bouch - 6693414 Sev - 1585713 Pacl - 5004548 Crux - 12450522 Gristle - 1814929 Zan - 9245936", "1814929");
+  var api_url = url + userKey;
+  
+  if (userKey === null) {
+    console.log("error");
+  } else {
+    getCharacter();
+  }
+  
+  console.log(api_url);
 } else {
   getCharacter();
 }
