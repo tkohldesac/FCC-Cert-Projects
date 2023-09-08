@@ -1,7 +1,7 @@
 {
   "name": "tkohldesac-portfolio",
   "version": "0.1.0",
-  "homepage": "https://kohldesac.com",
+  "homepage": "https://tkohldesac.github.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
