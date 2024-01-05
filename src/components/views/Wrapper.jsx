@@ -70,7 +70,9 @@ export default function Wrapper() {
                 <GridItem>
 
                     <Stack align="center">
-                    <Link src={profilepic} borderRadius='full' boxSize='300px' mr={2} verticalAlign={'middle'} href='http://kohldesac.dev' />
+                        <Link href="http://www.kohldesac.dev">
+                        <Image src={profilepic} borderRadius='full' boxSize='300px' mr={2} verticalAlign={'middle'} />
+                        </Link>
                         <Link _hover={{ textDecoration: 'none' }} fontSize='3xl' href="mailto:hello@kohldesac.com"><EmailIcon /> hello@kohldesac.com</Link>
                     </Stack>
                 </GridItem>
