@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
-import BusinessCard from './components/views/BusinessCard';
+import { ThemeProvider, createTheme } from '@mui/material/styles'; // Import createTheme
+import BusinessCard from './components/views/BusinessCard.jsx';
+
+const theme = createTheme();
 
 function App() {
   return (
-
-    <ChakraProvider>
+    <ThemeProvider theme={theme}>
       <BusinessCard />
-    </ChakraProvider>
+    </ThemeProvider>
   );
 }
 
