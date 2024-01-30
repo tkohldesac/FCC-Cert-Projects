@@ -17,7 +17,12 @@ import {
 } from '@mui/material';
 
 import TechStack from '../TechStack.jsx';
+import Experience from '../Experience.jsx'
+import AboutMe from '../AboutMe.jsx';
+import Projects from '../Projects.jsx'
+
 import profilepic from '../helpers/images/profilepic.png'
+
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -30,7 +35,8 @@ export default function BusinessCard() {
 
 
     return (
-        <Box sx={{flexGrow:1}} margin="auto">
+<div id="testDiv" style={{ maxWidth: '60vw', margin: 'auto' }}>
+        <Box sx={{flexGrow:1}} >
         <Grid container bg={"lightgray"} m="auto" spacing={2}>
             <Item item xs={4}>
                 <Typography variant="h4">Topher Kohlstedt</Typography>
@@ -43,7 +49,9 @@ export default function BusinessCard() {
                         <EmailIcon fontSize='xl'/> hello@kohldesac.com
             </Link>
             </Item>
+            {/* "Socials" */}
             </Grid>
+{/* Tech Stack Accordion */}
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ArrowDropDownIcon />}
@@ -59,8 +67,59 @@ export default function BusinessCard() {
 
                 </AccordionDetails>
             </Accordion>
-       
+{/* Projects Accordion */}
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                >
+                    Projects
+                </AccordionSummary>
+
+                <AccordionDetails>
+
+                <Projects/>
+
+                </AccordionDetails>
+            </Accordion>  
+{/* Experience Accordion */}
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                >
+                    Experience
+                </AccordionSummary>
+
+                <AccordionDetails>
+
+                <Experience/>
+
+                </AccordionDetails>
+            </Accordion>  
+
+{/* About Me Accordion */}
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                >
+                    About Me
+                </AccordionSummary>
+
+                <AccordionDetails>
+
+                <AboutMe />
+
+                </AccordionDetails>
+            </Accordion>
+
+
         </Box>
+        </div>
         );
 }
 
