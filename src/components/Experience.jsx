@@ -6,27 +6,27 @@ export default function TechStack() {
 
     return (
         <>
-        <Grid container>
-        <Grid item>
+        <Grid container justifyContent={'center'}>
+            <Grid item>
                 <Typography variant="h6">Skills:</Typography>
                 <List>
-                    <ListItem><Typography>Managed Service Providers</Typography></ListItem>
-                    <ListItem><Typography>IT Administration</Typography></ListItem>
-                    <ListItem><Typography>WordPress</Typography></ListItem>
-                    <ListItem><Typography>Google</Typography></ListItem>
-                    <ListItem><Typography>Azure</Typography></ListItem>
-                    <ListItem><Typography>Adobe Creative Suite</Typography></ListItem>
+                    <ListItem><Typography variant="p">Managed Service Providers</Typography></ListItem>
+                    <ListItem><Typography variant="p">IT Administration</Typography></ListItem>
+                    <ListItem><Typography variant="p">WordPress</Typography></ListItem>
+                    <ListItem><Typography variant="p">Google</Typography></ListItem>
+                    <ListItem><Typography variant="p">Azure</Typography></ListItem>
+                    <ListItem><Typography variant="p">Adobe Creative Suite</Typography></ListItem>
                 </List>
             </Grid>
             <Grid item>
                 <Typography variant="h6">Recent Roles:</Typography>
                 <List>
-                    <ListItem><Typography>Managed Service Providers</Typography></ListItem>
-                    <ListItem><Typography>IT Administration</Typography></ListItem>
-                    <ListItem><Typography>WordPress</Typography></ListItem>
-                    <ListItem><Typography>Google</Typography></ListItem>
-                    <ListItem><Typography>Azure</Typography></ListItem>
-                    <ListItem><Typography>Adobe Creative Suite</Typography></ListItem>
+                    <ListItem><Typography variant="p">Managed Service Providers</Typography></ListItem>
+                    <ListItem><Typography variant="p">IT Administration</Typography></ListItem>
+                    <ListItem><Typography variant="p">WordPress</Typography></ListItem>
+                    <ListItem><Typography variant="p">Google</Typography></ListItem>
+                    <ListItem><Typography variant="p">Azure</Typography></ListItem>
+                    <ListItem><Typography variant="p">Adobe Creative Suite</Typography></ListItem>
                 </List>
             </Grid>
             

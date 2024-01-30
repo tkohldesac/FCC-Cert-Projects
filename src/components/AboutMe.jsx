@@ -7,7 +7,7 @@ export default function TechStack() {
 
     return (
         <>
-        <Grid container>
+        <Grid container justifyContent={'center'}>
             <Grid item>
                 <Typography variant="h6">Hobbies:</Typography>
                 <List>
@@ -16,6 +16,8 @@ export default function TechStack() {
                     <ListItem><Typography>Docker</Typography></ListItem>
                     <ListItem><Typography>Raspberry Pi</Typography></ListItem>
                     <ListItem><Typography>Home Gardening</Typography></ListItem>
+                    <ListItem><Typography>Chicken Farmer</Typography></ListItem>
+                    <ListItem><Typography>DIY Craftsman</Typography></ListItem>
                 </List>
             </Grid>
             <Grid item>
@@ -30,15 +32,14 @@ export default function TechStack() {
             <Grid item>
                 <Typography variant="h6">Gaming:</Typography>
                 <List>
+                    <ListItem><Typography>Banjo-Kazooie/Tooie <FavoriteIcon sx={{fontSize: 16 }} /></Typography></ListItem>
                     <ListItem><Typography>Factorio</Typography></ListItem>
                     <ListItem><Typography>Final Fantasy XIV</Typography></ListItem>
                     <ListItem><Typography>Dwarf Fortress</Typography></ListItem>
                     <ListItem><Typography>Baldur's Gate 3</Typography></ListItem>
                     <ListItem><Typography>Nintendo</Typography></ListItem>
                     <ListItem><Typography>Smash Bros.</Typography></ListItem>
-                    <ListItem><Typography>Retro Gaming</Typography></ListItem>
                     <ListItem><Typography>Halo</Typography></ListItem>
-                    <ListItem><Typography>Banjo-Kazooie/Tooie <FavoriteIcon sx={{fontSize: 16 }} /></Typography></ListItem>
                 </List>
             </Grid>
         </Grid>

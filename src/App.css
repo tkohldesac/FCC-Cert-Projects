@@ -1,0 +1,13 @@
+/* globalStyles.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #666;
+}
+
+.svg-icon {
+  pointer-events: none;
+}

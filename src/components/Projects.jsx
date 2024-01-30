@@ -1,5 +1,5 @@
 import React from "react";
-import {Stack, Grid, Typography, Tooltip, Link} from '@mui/material';
+import {Stack, Grid, Typography, Tooltip, Link, Container} from '@mui/material';
 
 
 
@@ -27,38 +27,40 @@ export default function TechStack() {
 
     return (
         <>
-        <Stack direction="row">
-            <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                <Grid container>
-                    <Tooltip title={ouataDescription}>
-                        <Grid item>
-                            <Typography>IMAGE</Typography>
-                            <Typography variant="h6">Once Upon A Time Ago</Typography>
+            <Container style={{backgroundColor: '#888'}}>
+                <Stack direction="row" justifyContent={'center'}>
+                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
+                        <Grid container>
+                            <Tooltip title={ouataDescription}>
+                                <Grid item>
+                                    <Typography>IMAGE</Typography>
+                                    <Typography variant="h6">Once Upon A Time Ago</Typography>
+                                </Grid>
+                            </Tooltip>
                         </Grid>
-                    </Tooltip>
-                </Grid>
-            </Link>
-            <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                <Grid container>
-                    <Tooltip title={floraFactsDescription}>                    
-                        <Grid item>
-                            <Typography>IMAGE</Typography>
-                            <Typography variant="h6">FloraFacts</Typography>
+                    </Link>
+                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
+                        <Grid container>
+                            <Tooltip title={floraFactsDescription}>                    
+                                <Grid item>
+                                    <Typography>IMAGE</Typography>
+                                    <Typography variant="h6">FloraFacts</Typography>
+                                </Grid>
+                            </Tooltip>
                         </Grid>
-                    </Tooltip>
-                </Grid>
-            </Link>
-            <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                <Grid container>
-                    <Tooltip title={aetherflowDescription}>
-                        <Grid item>
-                            <Typography>IMAGE</Typography>
-                            <Typography variant="h6">Aetherflow</Typography>
+                    </Link>
+                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
+                        <Grid container>
+                            <Tooltip title={aetherflowDescription}>
+                                <Grid item>
+                                    <Typography>IMAGE</Typography>
+                                    <Typography variant="h6">Aetherflow</Typography>
+                                </Grid>
+                            </Tooltip>
                         </Grid>
-                    </Tooltip>
-                </Grid>
-            </Link>
-            </Stack>
+                    </Link>
+                </Stack>
+            </Container>
         </>
 
      );

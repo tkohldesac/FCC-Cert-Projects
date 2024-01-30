@@ -1,13 +1,8 @@
 import React, { } from 'react';
 // FIXME:
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import EmailIcon from '@mui/icons-material/Email';
 
 import { 
-    Link, 
-    Grid, 
-    Box, 
-    Avatar, 
     Accordion, 
     AccordionSummary, 
     AccordionDetails, 
@@ -20,8 +15,9 @@ import TechStack from '../TechStack.jsx';
 import Experience from '../Experience.jsx'
 import AboutMe from '../AboutMe.jsx';
 import Projects from '../Projects.jsx'
+import Socials from '../Socials.jsx'
 
-import profilepic from '../helpers/images/profilepic.png'
+
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -35,49 +31,21 @@ export default function BusinessCard() {
 
 
     return (
-<div id="testDiv" style={{ maxWidth: '60vw', margin: 'auto' }}>
-        <Box sx={{flexGrow:1}} >
-        <Grid container bg={"lightgray"} m="auto" spacing={2}>
-            <Item item xs={4}>
-                <Typography variant="h4">Topher Kohlstedt</Typography>
-                    <Link href="http://www.kohldesac.dev">
-                        <Avatar src={profilepic} borderRadius='50%' alt="Handsome Devil" sx={{width: 240, height: 240}}/>
-                    </Link>
-            </Item>
-            <Item item>
-                <Link style={{ textDecoration: 'none', color:'black' }} fontSize='2xl' href="mailto:hello@kohldesac.com">
-                        <EmailIcon fontSize='xl'/> hello@kohldesac.com
-            </Link>
-            </Item>
-            {/* "Socials" */}
-            </Grid>
-{/* Tech Stack Accordion */}
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                >
-                    Tech Stack
-                </AccordionSummary>
-
-                <AccordionDetails>
-
-                <TechStack />
-
-                </AccordionDetails>
-            </Accordion>
+        <Paper style={{ maxWidth: '60vw', margin: 'auto', backgroundColor: '#888'}}>
+            <TechStack />
+            <Socials />
 {/* Projects Accordion */}
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ArrowDropDownIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
+                    style={{backgroundColor: '#333', color:'white'}}
                 >
-                    Projects
+                    <Typography variant="h5" m="auto">Projects</Typography>
                 </AccordionSummary>
 
-                <AccordionDetails>
+                <AccordionDetails style={{backgroundColor: '#888'}}>
 
                 <Projects/>
 
@@ -89,11 +57,12 @@ export default function BusinessCard() {
                     expandIcon={<ArrowDropDownIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
+                    style={{backgroundColor: '#333', color:'white'}}
                 >
-                    Experience
+                    <Typography variant="h5" m="auto">Experience</Typography>
                 </AccordionSummary>
 
-                <AccordionDetails>
+                <AccordionDetails style={{backgroundColor: '#888'}}>
 
                 <Experience/>
 
@@ -106,11 +75,12 @@ export default function BusinessCard() {
                     expandIcon={<ArrowDropDownIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
+                    style={{backgroundColor: '#333', color:'white'}}
                 >
-                    About Me
+                    <Typography variant="h5" m="auto">About Me</Typography>
                 </AccordionSummary>
 
-                <AccordionDetails>
+                <AccordionDetails style={{backgroundColor: '#888'}}>
 
                 <AboutMe />
 
@@ -118,8 +88,8 @@ export default function BusinessCard() {
             </Accordion>
 
 
-        </Box>
-        </div>
+      
+        </Paper>
         );
 }
 
