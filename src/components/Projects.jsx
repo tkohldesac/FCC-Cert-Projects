@@ -28,39 +28,40 @@ export default function TechStack() {
 
 
     return (
-        <Container xs={12}>
-           <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3} margin={'auto'}>
-                <Grid item xs={4}>
-                <Link href="ouata.kohldesac.com" style={{ textDecoration: 'none', color: 'black' }}>
-                    <Tooltip title={ouataDescription}>
-                    <Container>
-                        <Typography variant="h6">Once Upon A Time Ago</Typography>
-                        <img src={ouataThumbnail} width="300px" height="200px" heightalt="Once Upon A Time Ago" />
-                    </Container>
-                    </Tooltip>
-                </Link>
-                </Grid>
-                <Grid item xs={4}>
-                <Link href="https://github.com/tkohldesac/florafacts" style={{ textDecoration: 'none', color: 'black' }}>
-                    <Tooltip title={floraFactsDescription}>
-                    <Container>
-                        <Typography variant="h6">FloraFacts</Typography>
-                        <img src={floraThumbnail} width="300px" height="200px" alt="FloraFacts" />
-                    </Container>
-                    </Tooltip>
-                </Link>
-                </Grid>
-                <Grid item xs={4}>
-                <Link href="https://github.com/tkohldesac/aetherFlow" style={{ textDecoration: 'none', color: 'black' }}>
-                    <Tooltip title={aetherflowDescription}>
-                    <Container>
-                        <Typography variant="h6">Aetherflow</Typography>
-                        <img src={aetherThumbnail} width="300px" height="200px" alt="Aetherflow" />
-                    </Container>
-                    </Tooltip>
-                </Link>
-                </Grid>
-            </Grid>
-        </Container>
+        <Container maxWidth="md">
+  <Grid container spacing={2} justifyContent="center" xs={1} md={12}>
+    <Grid item xs={1} sm={12} md={4}>
+      <Link href="https://ouata.kohldesac.com" style={{ textDecoration: 'none', color: 'black' }}>
+        <Tooltip title={ouataDescription}>
+          <Container>
+            <Typography variant="h6">Once Upon A Time Ago</Typography>
+            <img src={ouataThumbnail} width="225" height="138" alt="Once Upon A Time Ago" />
+          </Container>
+        </Tooltip>
+      </Link>
+    </Grid>
+    <Grid item xs={1} sm={2} md={4}>
+      <Link href="https://github.com/tkohldesac/florafacts" style={{ textDecoration: 'none', color: 'black' }}>
+        <Tooltip title={floraFactsDescription}>
+          <Container>
+            <Typography variant="h6">FloraFacts</Typography>
+            <img src={floraThumbnail} width="225" height="138" alt="FloraFacts" />
+          </Container>
+        </Tooltip>
+      </Link>
+    </Grid>
+    <Grid item xs={1} sm={2} md={4}>
+      <Link href="https://github.com/tkohldesac/aetherFlow" style={{ textDecoration: 'none', color: 'black' }}>
+        <Tooltip title={aetherflowDescription}>
+          <Container>
+            <Typography variant="h6">Aetherflow</Typography>
+            <img src={aetherThumbnail}width="225" height="138" alt="Aetherflow" />
+          </Container>
+        </Tooltip>
+      </Link>
+    </Grid>
+  </Grid>
+</Container>
+
      );
 }

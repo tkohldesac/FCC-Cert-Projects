@@ -15,11 +15,11 @@ export default function Socials() {
     return (
             <Container>
                 <Grid container spacing={1}>
-                    <Grid xs={12} sm={1} md={5} m="auto" paddingTop='1rem' paddingBottom='1rem' display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
+                    <Grid xs={12} sm={12} md={5} m="auto" paddingTop='1rem' paddingBottom='1rem' display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
                         <Typography  variant="h4">Topher Kohlstedt</Typography>  
                         <Avatar src={profilepic} borderRadius='50%' alt="A Handsome Devil" sx={{width: 240, height: 240}}/>
                     </Grid>
-                    <Grid xs={12} sm={1} md={5} padding='3rem'>
+                    <Grid xs={12} sm={12} md={5} padding='3rem'>
                         <List display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
                             <ListItem>
                                 <Link style={{ textDecoration: 'none', color:'black' }} fontSize='2xl' href="mailto:hello@kohldesac.com" target="_blank">
