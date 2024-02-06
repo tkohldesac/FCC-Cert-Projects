@@ -5,7 +5,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { 
     Accordion, 
     AccordionSummary, 
-    AccordionDetails, 
+    AccordionDetails,
+    Container, 
     Typography, 
     Paper, 
     styled 
@@ -29,18 +30,20 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BusinessCard() {
 
-
     return (
         <Paper style={{ maxWidth: '60vw', margin: 'auto', backgroundColor: '#888'}}>
-            <TechStack />
-            <Socials />
+            <Container >
+                <TechStack />
+            </Container >
+            <Socials/>
 {/* Projects Accordion */}
             <Accordion>
                 <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
+                   expandIcon={<ArrowDropDownIcon/>}
+
                     aria-controls="panel1-content"
                     id="panel1-header"
-                    style={{backgroundColor: '#333', color:'white'}}
+                    style={{backgroundColor: '#333', color:'white',}}
                 >
                     <Typography variant="h5" m="auto">Projects</Typography>
                 </AccordionSummary>

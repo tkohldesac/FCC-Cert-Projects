@@ -7,8 +7,8 @@ const theme = createTheme();
 
 function App() {
   return (
-    <ThemeProvider theme={theme} >
-      <BusinessCard  />
+    <ThemeProvider theme={theme}>
+      <BusinessCard />
     </ThemeProvider>
   );
 }
