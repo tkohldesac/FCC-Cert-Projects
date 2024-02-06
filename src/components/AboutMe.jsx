@@ -12,10 +12,10 @@ export default function TechStack() {
                 <Typography variant="h5">Hobbies:</Typography>
                 <List>
                     <ListItem><Typography>Linux Server</Typography></ListItem>
-                    <ListItem><Typography>Linux Desktop</Typography></ListItem>
                     <ListItem><Typography>Docker</Typography></ListItem>
                     <ListItem><Typography>Raspberry Pi</Typography></ListItem>
                     <ListItem><Typography>Home Gardening</Typography></ListItem>
+                    <ListItem><Typography>Permaculture</Typography></ListItem>
                     <ListItem><Typography>Chicken Farmer</Typography></ListItem>
                     <ListItem><Typography>DIY Craftsman</Typography></ListItem>
                 </List>
@@ -23,10 +23,10 @@ export default function TechStack() {
             <Grid item>
                 <Typography variant="h5">Music:</Typography>
                 <List>
-                    <ListItem><Typography>Clarinet</Typography></ListItem>
-                    <ListItem><Typography>Bass Clarinet</Typography></ListItem>
-                    <ListItem><Typography>Alto and Tenor Saxophones</Typography></ListItem>
                     <ListItem><Typography>Guitar</Typography></ListItem>
+                    <ListItem><Typography>Alto and Tenor Saxophones</Typography></ListItem>
+                    <ListItem><Typography>Bass Clarinet</Typography></ListItem>
+                    <ListItem><Typography>Clarinet</Typography></ListItem>
                 </List>
             </Grid>
             <Grid item>

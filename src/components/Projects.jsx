@@ -1,7 +1,9 @@
 import React from "react";
 import {Stack, Grid, Typography, Tooltip, Link, Container, Paper} from '@mui/material';
 
-
+import ouataThumbnail from "./helpers/images/ouata.png"
+import aetherThumbnail from "./helpers/images/aether.jpg"
+import floraThumbnail from "./helpers/images/flora.jpg"
 
 export default function TechStack() {
 
@@ -33,7 +35,7 @@ export default function TechStack() {
                     <Tooltip title={ouataDescription}>
                     <Container>
                         <Typography variant="h6">Once Upon A Time Ago</Typography>
-                        <img src="https://placehold.co/200x150" alt="Once Upon A Time Ago" />
+                        <img src={ouataThumbnail} width="300px" height="200px" heightalt="Once Upon A Time Ago" />
                     </Container>
                     </Tooltip>
                 </Link>
@@ -43,7 +45,7 @@ export default function TechStack() {
                     <Tooltip title={floraFactsDescription}>
                     <Container>
                         <Typography variant="h6">FloraFacts</Typography>
-                        <img src="https://placehold.co/200x150" alt="FloraFacts" />
+                        <img src={floraThumbnail} width="300px" height="200px" alt="FloraFacts" />
                     </Container>
                     </Tooltip>
                 </Link>
@@ -53,7 +55,7 @@ export default function TechStack() {
                     <Tooltip title={aetherflowDescription}>
                     <Container>
                         <Typography variant="h6">Aetherflow</Typography>
-                        <img src="https://placehold.co/200x150" alt="Aetherflow" />
+                        <img src={aetherThumbnail} width="300px" height="200px" alt="Aetherflow" />
                     </Container>
                     </Tooltip>
                 </Link>

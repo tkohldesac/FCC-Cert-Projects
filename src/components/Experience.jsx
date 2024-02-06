@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, List, ListItem, Modal, Button, Box } from '@mui/material';
+import { Grid, Typography, List, ListItem, Modal, Button, Box, Link } from '@mui/material';
 
 export default function TechStack() {
 
@@ -18,7 +18,7 @@ export default function TechStack() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 400,
+        width: 800,
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
@@ -57,10 +57,13 @@ export default function TechStack() {
       >
         <Box sx={style}>
           <Typography variant="h6" component="h2">
-            Freelance Software Engineer
+            Freelance Software Engineer and Production Artist
           </Typography>
           <Typography sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          - Production Artist for <Link target="_blank" href="https://www.yepitsrocketscience.com/the-book.php" color="#000">Yep, It's Rocket Science!</Link>
+          - Graphic design using Adobe Creative Suite<br />
+          - Web development with HTML, CSS, and JavaScript.<br />
+          - Managed Wordpress sites for various clients.<br />
           </Typography>
         </Box>
       </Modal>
@@ -70,11 +73,14 @@ export default function TechStack() {
         onClose={handleNOTClose}
       >
         <Box sx={style}>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h6" component="h6">
             Network Operations Technician
+          <Typography variant="h5" component="h5">Convergence Networks</Typography>
           </Typography>
-          <Typography sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <Typography sx={{ mt: 2 }} centered>
+            - Invited to join the Network Operations Center for my proven attention to detail in previous roles.<br />
+            - Effectively managed a high number of user administration tickets for all US clients.<br />
+            - Optimized processes with documentation creation and updates during multi-company merger.<br />
           </Typography>
         </Box>
       </Modal>
@@ -88,7 +94,9 @@ export default function TechStack() {
             IT Support Specialist
           </Typography>
           <Typography sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          - Translated technical concepts into easily understandable terms for diverse audiences.<br />
+          - Spearheaded research, proposal, and successful implementation of the organization's inaugural integrated inventory and ticket management system.<br />
+          - Optimized operational efficiency through the use of existing licenses. <br />
           </Typography>
         </Box>
       </Modal>
