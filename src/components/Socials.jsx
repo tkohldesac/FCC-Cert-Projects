@@ -1,6 +1,5 @@
 import React from "react";
-import { styled } from '@mui/material/styles';
-import { Container, Typography, Link, Avatar, List, ListItem, Grid, Paper } from '@mui/material';
+import { Container, Typography, Link, Avatar, List, ListItem, Grid,  } from '@mui/material';
 
 import profilepic from './helpers/images/profilepic.png'
 
@@ -15,13 +14,13 @@ export default function Socials() {
 
     return (
             <Container>
-                <Grid container spacing={2}>
-                    <Grid xs={1} sm={1} md={4} m="auto" paddingTop='1rem' paddingBottom='1rem'>
+                <Grid container spacing={1}>
+                    <Grid xs={12} sm={1} md={5} m="auto" paddingTop='1rem' paddingBottom='1rem' display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
                         <Typography  variant="h4">Topher Kohlstedt</Typography>  
                         <Avatar src={profilepic} borderRadius='50%' alt="A Handsome Devil" sx={{width: 240, height: 240}}/>
                     </Grid>
-                    <Grid xs={12} sm={1} md={4} padding='3rem'>
-                        <List>
+                    <Grid xs={12} sm={1} md={5} padding='3rem'>
+                        <List display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'row'}>
                             <ListItem>
                                 <Link style={{ textDecoration: 'none', color:'black' }} fontSize='2xl' href="mailto:hello@kohldesac.com" target="_blank">
                                         <EmailIcon fontSize='xl'/> hello@kohldesac.com
