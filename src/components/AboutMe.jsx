@@ -7,9 +7,9 @@ export default function TechStack() {
 
     return (
         <>
-        <Grid container justifyContent={'center'}>
+        <Grid container justifyContent={'center'} spacing={10}>
             <Grid item>
-                <Typography variant="h6">Hobbies:</Typography>
+                <Typography variant="h5">Hobbies:</Typography>
                 <List>
                     <ListItem><Typography>Linux Server</Typography></ListItem>
                     <ListItem><Typography>Linux Desktop</Typography></ListItem>
@@ -21,7 +21,7 @@ export default function TechStack() {
                 </List>
             </Grid>
             <Grid item>
-                <Typography variant="h6">Music:</Typography>
+                <Typography variant="h5">Music:</Typography>
                 <List>
                     <ListItem><Typography>Clarinet</Typography></ListItem>
                     <ListItem><Typography>Bass Clarinet</Typography></ListItem>
@@ -30,16 +30,16 @@ export default function TechStack() {
                 </List>
             </Grid>
             <Grid item>
-                <Typography variant="h6">Gaming:</Typography>
+                <Typography variant="h5">Gaming:</Typography>
                 <List>
                     <ListItem><Typography>Banjo-Kazooie/Tooie <FavoriteIcon sx={{fontSize: 16 }} /></Typography></ListItem>
+                    <ListItem><Typography>Halo</Typography></ListItem>
+                    <ListItem><Typography>Super Smash Bros.</Typography></ListItem>
                     <ListItem><Typography>Factorio</Typography></ListItem>
                     <ListItem><Typography>Final Fantasy XIV</Typography></ListItem>
                     <ListItem><Typography>Dwarf Fortress</Typography></ListItem>
                     <ListItem><Typography>Baldur's Gate 3</Typography></ListItem>
                     <ListItem><Typography>Nintendo</Typography></ListItem>
-                    <ListItem><Typography>Smash Bros.</Typography></ListItem>
-                    <ListItem><Typography>Halo</Typography></ListItem>
                 </List>
             </Grid>
         </Grid>
