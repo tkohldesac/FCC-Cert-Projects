@@ -16,35 +16,35 @@ export default function TechStack() {
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoCss3 size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">CSS3</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoJavascript size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">JavaScript</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoReact size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">React</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <TbBrandReactNative size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">React Native</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoPostgresql size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">PostgreSQL</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoGit size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">Git</Typography>
                     </Grid>                
                     <Grid item xs={6} sm={4} md={1.3}>
                         <TbBrandNodejs size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">NodeJS</Typography>
                     </Grid>
                     <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoTypescript  size="5rem" />
-                        <Typography variant="subtitle1">HTML5</Typography>
+                        <Typography variant="subtitle1">TypeScript</Typography>
                     </Grid>
                 </Grid>
 

@@ -15,13 +15,12 @@ export default function Socials() {
 
     return (
             <Container>
-                <Grid container  columns={12}>
-                    <Grid xs={3} m="auto" paddingTop='1rem' paddingBottom='1rem'>
-                        <Typography variant="h4">Topher Kohlstedt</Typography>  
-                    
-                        <Avatar src={profilepic} borderRadius='50%' alt="Handsome Devil" sx={{width: 240, height: 240}}/>
-                        </Grid>
-                    <Grid xs={5} padding='3rem'>
+                <Grid container spacing={2}>
+                    <Grid xs={1} sm={1} md={4} m="auto" paddingTop='1rem' paddingBottom='1rem'>
+                        <Typography  variant="h4">Topher Kohlstedt</Typography>  
+                        <Avatar src={profilepic} borderRadius='50%' alt="A Handsome Devil" sx={{width: 240, height: 240}}/>
+                    </Grid>
+                    <Grid xs={12} sm={1} md={4} padding='3rem'>
                         <List>
                             <ListItem>
                                 <Link style={{ textDecoration: 'none', color:'black' }} fontSize='2xl' href="mailto:hello@kohldesac.com" target="_blank">
