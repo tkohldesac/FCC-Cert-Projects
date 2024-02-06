@@ -1,5 +1,5 @@
 import React from "react";
-import {Stack, Grid, Typography, Tooltip, Link, Container} from '@mui/material';
+import {Stack, Grid, Typography, Tooltip, Link, Container, Paper} from '@mui/material';
 
 
 
@@ -26,42 +26,39 @@ export default function TechStack() {
 
 
     return (
-        <>
-            <Container style={{backgroundColor: '#888'}}>
-                <Stack direction="row" justifyContent={'center'}>
-                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                        <Grid container>
-                            <Tooltip title={ouataDescription}>
-                                <Grid item>
-                                    <Typography>IMAGE</Typography>
-                                    <Typography variant="h6">Once Upon A Time Ago</Typography>
-                                </Grid>
-                            </Tooltip>
-                        </Grid>
-                    </Link>
-                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                        <Grid container>
-                            <Tooltip title={floraFactsDescription}>                    
-                                <Grid item>
-                                    <Typography>IMAGE</Typography>
-                                    <Typography variant="h6">FloraFacts</Typography>
-                                </Grid>
-                            </Tooltip>
-                        </Grid>
-                    </Link>
-                    <Link href="#" style={{textDecoration:'none', color:'black'}}>
-                        <Grid container>
-                            <Tooltip title={aetherflowDescription}>
-                                <Grid item>
-                                    <Typography>IMAGE</Typography>
-                                    <Typography variant="h6">Aetherflow</Typography>
-                                </Grid>
-                            </Tooltip>
-                        </Grid>
-                    </Link>
-                </Stack>
-            </Container>
-        </>
-
+        <Container xs={12}>
+           <Grid container direction="row" justifyContent="center" alignItems="center" spacing={3} margin={'auto'}>
+                <Grid item xs={4}>
+                <Link href="ouata.kohldesac.com" style={{ textDecoration: 'none', color: 'black' }}>
+                    <Tooltip title={ouataDescription}>
+                    <Container>
+                        <Typography variant="h6">Once Upon A Time Ago</Typography>
+                        <img src="https://placehold.co/200x150" alt="Once Upon A Time Ago" />
+                    </Container>
+                    </Tooltip>
+                </Link>
+                </Grid>
+                <Grid item xs={4}>
+                <Link href="https://github.com/tkohldesac/florafacts" style={{ textDecoration: 'none', color: 'black' }}>
+                    <Tooltip title={floraFactsDescription}>
+                    <Container>
+                        <Typography variant="h6">FloraFacts</Typography>
+                        <img src="https://placehold.co/200x150" alt="FloraFacts" />
+                    </Container>
+                    </Tooltip>
+                </Link>
+                </Grid>
+                <Grid item xs={4}>
+                <Link href="https://github.com/tkohldesac/aetherFlow" style={{ textDecoration: 'none', color: 'black' }}>
+                    <Tooltip title={aetherflowDescription}>
+                    <Container>
+                        <Typography variant="h6">Aetherflow</Typography>
+                        <img src="https://placehold.co/200x150" alt="Aetherflow" />
+                    </Container>
+                    </Tooltip>
+                </Link>
+                </Grid>
+            </Grid>
+        </Container>
      );
 }

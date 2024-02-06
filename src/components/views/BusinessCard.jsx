@@ -1,7 +1,5 @@
 import React, { } from 'react';
-// FIXME:
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
 import { 
     Accordion, 
     AccordionSummary, 
@@ -17,8 +15,6 @@ import Experience from '../Experience.jsx'
 import AboutMe from '../AboutMe.jsx';
 import Projects from '../Projects.jsx'
 import Socials from '../Socials.jsx'
-
-
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
