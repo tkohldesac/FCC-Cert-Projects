@@ -28,9 +28,7 @@ export default function BusinessCard() {
 
     return (
         <Paper style={{ maxWidth: '60vw', margin: 'auto', backgroundColor: '#888'}}>
-            <Container >
                 <TechStack />
-            </Container >
             <Socials/>
 {/* Projects Accordion */}
             <Accordion>

@@ -1,5 +1,5 @@
 import React, { } from 'react';
-import { Stack, Typography, Container } from '@mui/material';
+import { Grid, Typography, Container } from '@mui/material';
 
 import { BiLogoPostgresql, BiLogoHtml5, BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoGit, BiLogoTypescript  } from "react-icons/bi";
 import { TbBrandReactNative, TbBrandNodejs } from "react-icons/tb";
@@ -8,48 +8,45 @@ export default function TechStack() {
 
 
     return (
-        <>
-            <Container >
-                <Stack direction="row" justifyContent={'center'}>
-                    <Stack alignItems='center' padding="1rem">
+     
+            <Grid container spacing={1} >
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoHtml5 size="5rem" />
-                        <Typography >HTML5</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoCss3 size="5rem" />
-                        <Typography alignItems='center'>CSS3</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoJavascript size="5rem" />
-                        <Typography alignItems='center'>JavaScript</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoReact size="5rem" />
-                        <Typography alignItems='center'>React</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <TbBrandReactNative size="5rem" />
-                        <Typography alignItems='center'>React Native</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoPostgresql size="5rem" />
-                        <Typography alignItems='center'>PostgreSQL</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoGit size="5rem" />
-                        <Typography alignItems='center' >Git</Typography>
-                    </Stack>                
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>                
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <TbBrandNodejs size="5rem" />
-                        <Typography alignItems='center' >NodeJS</Typography>
-                    </Stack>
-                    <Stack alignItems='center' padding="1rem">
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={1.3}>
                         <BiLogoTypescript  size="5rem" />
-                        <Typography alignItems='center' >TypeScript</Typography>
-                    </Stack>
-                </Stack>
-            </Container>
-        </>
+                        <Typography variant="subtitle1">HTML5</Typography>
+                    </Grid>
+                </Grid>
 
      );
 }
