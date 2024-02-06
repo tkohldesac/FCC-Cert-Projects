@@ -60,7 +60,7 @@ export default function TechStack() {
             Freelance Software Engineer and Production Artist
           </Typography>
           <Typography sx={{ mt: 2 }}>
-          - Production Artist for <Link target="_blank" href="https://www.yepitsrocketscience.com/the-book.php" color="#000">Yep, It's Rocket Science!</Link>
+          - Production Artist for <Link target="_blank" href="https://www.yepitsrocketscience.com/the-book.php" color="#000">Yep, It's Rocket Science!</Link><br />
           - Graphic design using Adobe Creative Suite<br />
           - Web development with HTML, CSS, and JavaScript.<br />
           - Managed Wordpress sites for various clients.<br />
