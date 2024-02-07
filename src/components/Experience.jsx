@@ -31,20 +31,20 @@ export default function TechStack() {
             <Grid item>
                 <Typography variant="h6">Skills:</Typography>
                 <List>
-                    <ListItem><Typography variant="p">Managed Service Providers</Typography></ListItem>
-                    <ListItem><Typography variant="p">IT Administration</Typography></ListItem>
-                    <ListItem><Typography variant="p">WordPress</Typography></ListItem>
-                    <ListItem><Typography variant="p">Google</Typography></ListItem>
-                    <ListItem><Typography variant="p">Azure</Typography></ListItem>
-                    <ListItem><Typography variant="p">Adobe Creative Suite</Typography></ListItem>
+                    <ListItem><Typography>Managed Service Providers</Typography></ListItem>
+                    <ListItem><Typography>IT Administration</Typography></ListItem>
+                    <ListItem><Typography>WordPress</Typography></ListItem>
+                    <ListItem><Typography>Google</Typography></ListItem>
+                    <ListItem><Typography>Azure</Typography></ListItem>
+                    <ListItem><Typography>Adobe Creative Suite</Typography></ListItem>
                 </List>
             </Grid>
             <Grid item>
                 <Typography variant="h6">Recent Roles:</Typography>
                 <List>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleSEOpen}><Typography>Freelance Software Engineer</Typography></Button></ListItem>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleNOTOpen}><Typography>Network Operations Technician</Typography></Button></ListItem>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleITOpen}><Typography>IT Support Specialist</Typography></Button></ListItem>
+                    <ListItem style={{color: 'black'}} onClick={handleSEOpen}><Typography >Freelance Software Engineer</Typography></ListItem>
+                    <ListItem><Typography style={{color: 'black'}} onClick={handleNOTOpen}>Network Operations Technician</Typography></ListItem>
+                    <ListItem><Typography style={{color: 'black'}} onClick={handleITOpen}>IT Support Specialist</Typography></ListItem>
 
                 </List>
             </Grid>
