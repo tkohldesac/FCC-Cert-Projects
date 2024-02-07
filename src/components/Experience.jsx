@@ -42,9 +42,9 @@ export default function TechStack() {
             <Grid item>
                 <Typography variant="h6">Recent Roles:</Typography>
                 <List>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleSEOpen}>Freelance Software Engineer</Button></ListItem>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleNOTOpen}>Network Operations Technician</Button></ListItem>
-                    <ListItem><Button style={{color: 'black'}} onClick={handleITOpen}> IT Support Specialist</Button></ListItem>
+                    <ListItem><Button style={{color: 'black'}} onClick={handleSEOpen}><Typography>Freelance Software Engineer</Typography></Button></ListItem>
+                    <ListItem><Button style={{color: 'black'}} onClick={handleNOTOpen}><Typography>Network Operations Technician</Typography></Button></ListItem>
+                    <ListItem><Button style={{color: 'black'}} onClick={handleITOpen}><Typography>IT Support Specialist</Typography></Button></ListItem>
 
                 </List>
             </Grid>
