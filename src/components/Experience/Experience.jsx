@@ -42,9 +42,9 @@ export default function TechStack() {
             <Grid item>
                 <Typography variant="h6">Recent Roles:</Typography>
                 <List>
-                    <ListItem style={{color: 'black'}} onClick={handleSEOpen}><Typography >Freelance Software Engineer</Typography></ListItem>
-                    <ListItem><Typography style={{color: 'black'}} onClick={handleNOTOpen}>Network Operations Technician</Typography></ListItem>
-                    <ListItem><Typography style={{color: 'black'}} onClick={handleITOpen}>IT Support Specialist</Typography></ListItem>
+                    <ListItem><Button underline="always" style={{color: 'black', textDecoration: 'underline'}} onClick={handleNOTOpen}> Network Operations Technician</Button></ListItem>
+                    <ListItem><Button underline="always" style={{color: 'black', textDecoration: 'underline'}} onClick={handleITOpen}>IT Support Specialist</Button></ListItem>
+                    <ListItem><Button underline="always" style={{color: 'black', textDecoration: 'underline'}} onClick={handleSEOpen}> Freelance Software Engineer</Button></ListItem>
 
                 </List>
             </Grid>
@@ -56,7 +56,7 @@ export default function TechStack() {
         onClose={handleSEClose}
       >
         <Box sx={style}>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h6">
             Freelance Software Engineer and Production Artist
           </Typography>
           <Typography sx={{ mt: 2 }}>
@@ -73,10 +73,10 @@ export default function TechStack() {
         onClose={handleNOTClose}
       >
         <Box sx={style}>
-          <Typography variant="h6" component="h6">
+          <Typography variant="h6">
             Network Operations Technician
-          <Typography variant="h5" component="h5">Convergence Networks</Typography>
           </Typography>
+          <Typography variant="h5" >Convergence Networks</Typography>
           <Typography sx={{ mt: 2 }} centered>
             - Invited to join the Network Operations Center for my proven attention to detail in previous roles.<br />
             - Effectively managed a high number of user administration tickets for all US clients.<br />
@@ -90,7 +90,7 @@ export default function TechStack() {
         onClose={handleITClose}
       >
         <Box sx={style}>
-          <Typography variant="h6" component="h2">
+          <Typography variant="h6">
             IT Support Specialist
           </Typography>
           <Typography sx={{ mt: 2 }}>

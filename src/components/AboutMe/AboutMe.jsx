@@ -2,11 +2,12 @@ import React from "react";
 import { Grid, Typography, List, ListItem } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
+
+
+
 export default function TechStack() {
 
-
     return (
-        <>
         <Grid container justifyContent={'center'} spacing={10}>
             <Grid item>
                 <Typography variant="h5">Hobbies:</Typography>
@@ -43,8 +44,5 @@ export default function TechStack() {
                 </List>
             </Grid>
         </Grid>
-
-        </>
-
      );
 }

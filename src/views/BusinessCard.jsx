@@ -10,19 +10,11 @@ import {
     styled 
 } from '@mui/material';
 
-import TechStack from '../TechStack.jsx';
-import Experience from '../Experience.jsx'
-import AboutMe from '../AboutMe.jsx';
-import Projects from '../Projects.jsx'
-import Socials from '../Socials.jsx'
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
+import TechStack from '../components/TechStack/TechStack.jsx';
+import Experience from '../components/Experience/Experience.jsx'
+import AboutMe from '../components/AboutMe/AboutMe.jsx';
+import Projects from '../components/Projects/Projects.jsx'
+import Socials from '../components/Socials/Socials.jsx'
 
 export default function BusinessCard() {
 

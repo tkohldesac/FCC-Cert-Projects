@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles'; // Import createTheme
-import BusinessCard from './components/views/BusinessCard.jsx';
+import BusinessCard from './views/BusinessCard.jsx';
 
 const theme = createTheme();
 
