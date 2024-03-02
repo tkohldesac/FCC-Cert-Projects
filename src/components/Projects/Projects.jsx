@@ -1,9 +1,9 @@
 import React from "react";
-import {Stack, Grid, Typography, Tooltip, Link, Container, Paper} from '@mui/material';
+import {Grid, Typography, Tooltip, Link, Container} from '@mui/material';
 
-import ouataThumbnail from "./helpers/images/ouata.png"
-import aetherThumbnail from "./helpers/images/aether.jpg"
-import floraThumbnail from "./helpers/images/flora.jpg"
+const ouataThumbnail = "https://i.imgur.com/LQdG0m7.png"
+const aetherThumbnail = "https://i.imgur.com/r79H5oG.jpg"
+const floraThumbnail = "https://i.imgur.com/zKfRpcB.jpg"
 
 export default function TechStack() {
 
